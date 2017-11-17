@@ -12,11 +12,14 @@ public class HideScript : MonoBehaviour {
 
     private void Start()
     {
-
+		if (playerHead == null)
+			playerHead = Camera.main;
     }
 
     private void Update()
     {
+		
+
         if (!I_Can_See(plant))
         {
             if (changeEnabled)
