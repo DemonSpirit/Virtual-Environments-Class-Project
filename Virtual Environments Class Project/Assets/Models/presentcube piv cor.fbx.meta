@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: f8dbd730cae006e488a5dbf06baf109b
-timeCreated: 1510918969
+guid: f022e5e3a9f7f9b4a8ab28cc3ada0d86
+timeCreated: 1510919861
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -347,6 +347,7 @@ ModelImporter:
     4300130: Object_67
     4300132: Object_68
     4300134: Object_69
+    9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -424,7 +425,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

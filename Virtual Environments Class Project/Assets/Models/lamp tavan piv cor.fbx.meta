@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: e0feefa4d98799b49ab261487d613fb0
+timeCreated: 1510919796
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Default
+    100002: //RootNode
+    100004: Object_1
+    100006: Object_10
+    100008: Object_11
+    100010: Object_12
+    100012: Object_13
+    100014: Object_14
+    100016: Object_15
+    100018: Object_16
+    100020: Object_17
+    100022: Object_18
+    100024: Object_2
+    100026: Object_3
+    100028: Object_5
+    100030: Object_6
+    100032: Object_7
+    100034: Object_8
+    100036: Object_9
+    100038: SAVANNA3D_Clear_Glass
+    400000: Default
+    400002: //RootNode
+    400004: Object_1
+    400006: Object_10
+    400008: Object_11
+    400010: Object_12
+    400012: Object_13
+    400014: Object_14
+    400016: Object_15
+    400018: Object_16
+    400020: Object_17
+    400022: Object_18
+    400024: Object_2
+    400026: Object_3
+    400028: Object_5
+    400030: Object_6
+    400032: Object_7
+    400034: Object_8
+    400036: Object_9
+    400038: SAVANNA3D_Clear_Glass
+    2300000: Object_1
+    2300002: Object_10
+    2300004: Object_11
+    2300006: Object_12
+    2300008: Object_13
+    2300010: Object_14
+    2300012: Object_15
+    2300014: Object_16
+    2300016: Object_17
+    2300018: Object_18
+    2300020: Object_2
+    2300022: Object_3
+    2300024: Object_5
+    2300026: Object_6
+    2300028: Object_7
+    2300030: Object_8
+    2300032: Object_9
+    3300000: Object_1
+    3300002: Object_10
+    3300004: Object_11
+    3300006: Object_12
+    3300008: Object_13
+    3300010: Object_14
+    3300012: Object_15
+    3300014: Object_16
+    3300016: Object_17
+    3300018: Object_18
+    3300020: Object_2
+    3300022: Object_3
+    3300024: Object_5
+    3300026: Object_6
+    3300028: Object_7
+    3300030: Object_8
+    3300032: Object_9
+    4300000: Object_1
+    4300002: Object_3
+    4300004: Object_5
+    4300006: Object_6
+    4300008: Object_2
+    4300010: Object_7
+    4300012: Object_8
+    4300014: Object_9
+    4300016: Object_10
+    4300018: Object_11
+    4300020: Object_12
+    4300022: Object_13
+    4300024: Object_14
+    4300026: Object_15
+    4300028: Object_16
+    4300030: Object_17
+    4300032: Object_18
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131
+    second: {fileID: 2100000, guid: e3f5dc83ea98e1c4fa55c7aff6fdfe2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_10
+    second: {fileID: 2100000, guid: ffa9a009364c1cd4fb703e7e0db9ce70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_11
+    second: {fileID: 2100000, guid: f2229cf1afad35d448fdc9cbfbb15cc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_12
+    second: {fileID: 2100000, guid: 01983d1c4fba43e4fb67d48e09292ff2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_13
+    second: {fileID: 2100000, guid: 7b25d636f3bf2c6488d12b4b45e9494d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_14
+    second: {fileID: 2100000, guid: fa10a4ff8fa6c2b43be42351566667cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_2
+    second: {fileID: 2100000, guid: cb51d79183deb584d9d11e53d6a48ab2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_3
+    second: {fileID: 2100000, guid: 8e7987e4844e4cd499df1e139598bdb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_4
+    second: {fileID: 2100000, guid: e93ce1a4547d5a140aafd1fa4bbe7b41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_5
+    second: {fileID: 2100000, guid: a3659a0e2dd348a43aa002e365d392cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_6
+    second: {fileID: 2100000, guid: ff5e24b914baf2440a204e11d293370d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_7
+    second: {fileID: 2100000, guid: e8297289d660d944499f1883304e33dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_8
+    second: {fileID: 2100000, guid: b1558d67d373f79498a1b314370339df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brazil Glass Material 131_9
+    second: {fileID: 2100000, guid: fd4eb723a33988e41bab49ba516aea27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey_Glossy_Metal
+    second: {fileID: 2100000, guid: f98bdd9d4ddced54084b87858b4811a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey_Glossy_Metal_2
+    second: {fileID: 2100000, guid: 873e15ca18fe7134bb41da2fd83b1f91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_4
+    second: {fileID: 2100000, guid: 35838cc1af35a88498eac54c1a605d3c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
