@@ -64,6 +64,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 db2b86783084974596c6f4a84d5c2e56 Assembly-CSharp.dll:.SteamVR_LoadLevel
 01867100973c590c32be26126c402eac Assembly-CSharp.dll:NewtonVR.NVRInteractableRotator
 7006ec9a1714f50992d92e4bcecf4e4b Assembly-CSharp.dll:Valve.VR.InteractionSystem.BodyCollider
+0186addb4da8fb86762a78ad15d6718a Assembly-CSharp.dll:.PlayTrumpetPieceScript
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SteamVR_CameraMask
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -160,13 +161,12 @@ dea1f50129720480e0f43a3e995ef93b Assembly-CSharp.dll:Valve.VR.InteractionSystem.
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Valve.VR.InteractionSystem.DontDestroyOnLoad
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Valve.VR.InteractionSystem.IgnoreTeleportTrace
 c16b5c8c97a60d8767b3fc8ceefacb5f Assembly-CSharp.dll:NewtonVR.NVRPhysicalController
-05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Valve.VR.InteractionSystem.Interactable
 01630b9e450f9e5d67fcd6e4af099264 Assembly-CSharp.dll:.SteamVR_GazeTracker
 73f9d5be89bfe8b6fe672de9550f1a0c Assembly-CSharp.dll:Valve.VR.InteractionSystem.ItemPackage
 7dc4607ea3c4e1c57f92525553793668 Assembly-CSharp.dll:.SteamVR_Menu
 314848ccc07794350e3bf9287e46b25b Assembly-CSharp.dll:.SteamVR_Teleporter
+f206f6d8914cf6097397116932c8fea4 Assembly-CSharp.dll:.TrumpetScript
 78e79beaf21027cbcbe88c894e6509bf Assembly-CSharp.dll:Valve.VR.InteractionSystem.FireSource
 1235609fcbaeb18ef7118947f508f7e0 Assembly-CSharp.dll:Valve.VR.InteractionSystem.LinearMapping
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:NewtonVR.NVRCollisionSoundProviderUnity

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ScaleTest.unity
+- path: Assets/TrumpetNoteDemo.unity
   isLoaded: 1
   isActive: 1
