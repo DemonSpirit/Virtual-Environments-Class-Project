@@ -166,7 +166,7 @@ c16b5c8c97a60d8767b3fc8ceefacb5f Assembly-CSharp.dll:NewtonVR.NVRPhysicalControl
 73f9d5be89bfe8b6fe672de9550f1a0c Assembly-CSharp.dll:Valve.VR.InteractionSystem.ItemPackage
 7dc4607ea3c4e1c57f92525553793668 Assembly-CSharp.dll:.SteamVR_Menu
 314848ccc07794350e3bf9287e46b25b Assembly-CSharp.dll:.SteamVR_Teleporter
-f206f6d8914cf6097397116932c8fea4 Assembly-CSharp.dll:.TrumpetScript
+c7f841a0ccfcb8d79cbc521528583c0a Assembly-CSharp.dll:.TrumpetScript
 78e79beaf21027cbcbe88c894e6509bf Assembly-CSharp.dll:Valve.VR.InteractionSystem.FireSource
 1235609fcbaeb18ef7118947f508f7e0 Assembly-CSharp.dll:Valve.VR.InteractionSystem.LinearMapping
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:NewtonVR.NVRCollisionSoundProviderUnity

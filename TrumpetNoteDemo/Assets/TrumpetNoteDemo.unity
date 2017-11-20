@@ -299,6 +299,11 @@ Prefab:
       propertyPath: OnBeginInteraction.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114117577032136566, guid: 4121333dbf44f0d4a8a4c8430f9af9a0,
+        type: 2}
+      propertyPath: leftHand
+      value: 
+      objectReference: {fileID: 1807354750}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4121333dbf44f0d4a8a4c8430f9af9a0, type: 2}
   m_IsPrefabParent: 0
@@ -402,6 +407,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114117577032136566, guid: 4121333dbf44f0d4a8a4c8430f9af9a0,
+        type: 2}
+      propertyPath: leftHand
+      value: 
+      objectReference: {fileID: 1807354750}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4121333dbf44f0d4a8a4c8430f9af9a0, type: 2}
   m_IsPrefabParent: 0
@@ -846,6 +856,11 @@ Prefab:
       propertyPath: OnBeginInteraction.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114117577032136566, guid: 4121333dbf44f0d4a8a4c8430f9af9a0,
+        type: 2}
+      propertyPath: leftHand
+      value: 
+      objectReference: {fileID: 1807354750}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4121333dbf44f0d4a8a4c8430f9af9a0, type: 2}
   m_IsPrefabParent: 0
@@ -1243,9 +1258,29 @@ Prefab:
       propertyPath: EditorPlayspaceDefault.x
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 11419036, guid: b0047dd65ff208349bf3a5aaaeae24d0, type: 2}
+      propertyPath: HoldButton
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419036, guid: b0047dd65ff208349bf3a5aaaeae24d0, type: 2}
+      propertyPath: UseButton
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464396, guid: b0047dd65ff208349bf3a5aaaeae24d0, type: 2}
+      propertyPath: HoldButton
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464396, guid: b0047dd65ff208349bf3a5aaaeae24d0, type: 2}
+      propertyPath: UseButton
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0047dd65ff208349bf3a5aaaeae24d0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1807354750 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 104806, guid: b0047dd65ff208349bf3a5aaaeae24d0, type: 2}
+  m_PrefabInternal: {fileID: 1678162489}
 --- !u!1001 &2131322036
 Prefab:
   m_ObjectHideFlags: 0
@@ -1334,6 +1369,11 @@ Prefab:
       propertyPath: OnBeginInteraction.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114117577032136566, guid: 4121333dbf44f0d4a8a4c8430f9af9a0,
+        type: 2}
+      propertyPath: leftHand
+      value: 
+      objectReference: {fileID: 1807354750}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4121333dbf44f0d4a8a4c8430f9af9a0, type: 2}
   m_IsPrefabParent: 0

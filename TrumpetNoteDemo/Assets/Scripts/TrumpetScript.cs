@@ -14,6 +14,7 @@ public class TrumpetScript : MonoBehaviour {
 
     // Gameobject attached to the VR Camera Head to represent the mouth.
     public GameObject mouth;
+    public GameObject leftHand;
 
     // Individual pieces of the trumpet model.
     public GameObject GOTrumpet1;
@@ -110,9 +111,10 @@ public class TrumpetScript : MonoBehaviour {
         if (gameObject.GetComponent<NewtonVR.NVRInteractableItem>().AttachedHands.Count == 0) return;
 
         // TODO: If both pieces are being held, prioritise the piece being held in the left hand.
+        Debug.Log(gameObject.GetComponent<NewtonVR.NVRInteractableItem>().AttachedHands[0].name);
         if (piece.GetComponent<NewtonVR.NVRInteractableItem>().AttachedHands.Count > 0)
         {
-            //
+            if (gameObject.GetComponent<NewtonVR.NVRInteractableItem>().AttachedHands[0].name == "LeftHand") return;
         }
 
         // Add the active pieces of the other trumpet piece holder to this one.
