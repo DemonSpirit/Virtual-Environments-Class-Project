@@ -13,6 +13,21 @@ ModelImporter:
     100010: transform14
     100012: transform15
     100014: //RootNode
+    100016: Object_1446
+    100018: Object_1447
+    100020: Object_1448
+    100022: Object_1449 1
+    100024: Object_1450
+    100026: Object_1451 1
+    100028: Object_1452 1
+    100030: sehpa
+    100032: transform10
+    100034: transform12
+    100036: transform5
+    100038: transform6
+    100040: transform7
+    100042: transform8
+    100044: transform9
     400000: Object_1449
     400002: Object_1451
     400004: Object_1452
@@ -21,11 +36,45 @@ ModelImporter:
     400010: transform14
     400012: transform15
     400014: //RootNode
+    400016: Object_1446
+    400018: Object_1447
+    400020: Object_1448
+    400022: Object_1449 1
+    400024: Object_1450
+    400026: Object_1451 1
+    400028: Object_1452 1
+    400030: sehpa
+    400032: transform10
+    400034: transform12
+    400036: transform5
+    400038: transform6
+    400040: transform7
+    400042: transform8
+    400044: transform9
     2300000: Object_1453
+    2300002: Object_1449
+    2300004: Object_1451
+    2300006: Object_1452
     3300000: Object_1453
+    3300002: Object_1449
+    3300004: Object_1451
+    3300006: Object_1452
     4300000: Object_1453
+    4300002: Object_1451
+    4300004: Object_1452
+    4300006: Object_1449
     9500000: //RootNode
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: 82c672b979814b54ea9dee58399322c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: d752042fc0e507e43b567f3ebeb4771c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
