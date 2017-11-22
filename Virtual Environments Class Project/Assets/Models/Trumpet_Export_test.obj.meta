@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: 865f270cfd50e6b48983cbf5a9636ee0
+timeCreated: 1511186719
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Cap1_Cylinder.001
+    100002: Cap2_Cylinder.001
+    100004: Cap3_Cylinder.001
+    100006: Mouthpiece_Cylinder.002
+    100008: Slide2_Cylinder.006
+    100010: TriggerSlide1_Cylinder.004
+    100012: TriggerSlide2_Cylinder.005
+    100014: //RootNode
+    100016: TrumpetShell_Cylinder.026
+    100018: TuningSlide_Cylinder.003
+    100020: Valve1_Cylinder
+    100022: Valve2_Cylinder
+    100024: Valve3_Cylinder
+    400000: Cap1_Cylinder.001
+    400002: Cap2_Cylinder.001
+    400004: Cap3_Cylinder.001
+    400006: Mouthpiece_Cylinder.002
+    400008: Slide2_Cylinder.006
+    400010: TriggerSlide1_Cylinder.004
+    400012: TriggerSlide2_Cylinder.005
+    400014: //RootNode
+    400016: TrumpetShell_Cylinder.026
+    400018: TuningSlide_Cylinder.003
+    400020: Valve1_Cylinder
+    400022: Valve2_Cylinder
+    400024: Valve3_Cylinder
+    2300000: Cap1_Cylinder.001
+    2300002: Cap2_Cylinder.001
+    2300004: Cap3_Cylinder.001
+    2300006: Mouthpiece_Cylinder.002
+    2300008: Slide2_Cylinder.006
+    2300010: TriggerSlide1_Cylinder.004
+    2300012: TriggerSlide2_Cylinder.005
+    2300014: TrumpetShell_Cylinder.026
+    2300016: TuningSlide_Cylinder.003
+    2300018: Valve1_Cylinder
+    2300020: Valve2_Cylinder
+    2300022: Valve3_Cylinder
+    3300000: Cap1_Cylinder.001
+    3300002: Cap2_Cylinder.001
+    3300004: Cap3_Cylinder.001
+    3300006: Mouthpiece_Cylinder.002
+    3300008: Slide2_Cylinder.006
+    3300010: TriggerSlide1_Cylinder.004
+    3300012: TriggerSlide2_Cylinder.005
+    3300014: TrumpetShell_Cylinder.026
+    3300016: TuningSlide_Cylinder.003
+    3300018: Valve1_Cylinder
+    3300020: Valve2_Cylinder
+    3300022: Valve3_Cylinder
+    4300000: Cap1_Cylinder.001
+    4300002: Cap2_Cylinder.001
+    4300004: Cap3_Cylinder.001
+    4300006: Mouthpiece_Cylinder.002
+    4300008: Slide2_Cylinder.006
+    4300010: TriggerSlide1_Cylinder.004
+    4300012: TriggerSlide2_Cylinder.005
+    4300014: TrumpetShell_Cylinder.026
+    4300016: TuningSlide_Cylinder.003
+    4300018: Valve1_Cylinder
+    4300020: Valve2_Cylinder
+    4300022: Valve3_Cylinder
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cap1_Cylinder.001Mat
+    second: {fileID: 2100000, guid: 254d830d150b1e64dac077d40ed9e396, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cap2_Cylinder.001Mat
+    second: {fileID: 2100000, guid: 10c4619be2fe39d4c891b3fda3c304d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cap3_Cylinder.001Mat
+    second: {fileID: 2100000, guid: c7c85e91804e33f4ea14d210d82317f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mouthpiece_Cylinder.002Mat
+    second: {fileID: 2100000, guid: d1f70ebe2b0a7674ea4f601f1384599b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Slide2_Cylinder.006Mat
+    second: {fileID: 2100000, guid: 96b801d11fb17de4e8e98222d273207f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TriggerSlide1_Cylinder.004Mat
+    second: {fileID: 2100000, guid: 3dfa67fc1b92930468210a5c87974ec6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TriggerSlide2_Cylinder.005Mat
+    second: {fileID: 2100000, guid: 8a4bd553079d78b48bade8ad78a6ed2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TrumpetShell_Cylinder.026Mat
+    second: {fileID: 2100000, guid: 0ce09f479fa39a147b6dbd55f8bf872e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TuningSlide_Cylinder.003Mat
+    second: {fileID: 2100000, guid: b4252755b88e9a340b7d81be5adbf27e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Valve1_CylinderMat
+    second: {fileID: 2100000, guid: 01990fe6ced1a6e4d929c41f6a9e19b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Valve2_CylinderMat
+    second: {fileID: 2100000, guid: d5e5debbc6b79b64486c567a35615214, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Valve3_CylinderMat
+    second: {fileID: 2100000, guid: c8b7f5c077c1ff4478d378f5ea0b02d8, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
