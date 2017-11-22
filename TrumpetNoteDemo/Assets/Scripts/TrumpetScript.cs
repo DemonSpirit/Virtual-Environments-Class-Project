@@ -103,6 +103,10 @@ public class TrumpetScript : MonoBehaviour {
         GOTrumpet2.SetActive(trumpet2Active);
         GOTrumpet3.SetActive(trumpet3Active);
         GOTrumpet4.SetActive(trumpet4Active);
+        GOTrumpet1.GetComponent<Collider>().enabled = trumpet1Active;
+        GOTrumpet2.GetComponent<Collider>().enabled = trumpet2Active;
+        GOTrumpet3.GetComponent<Collider>().enabled = trumpet3Active;
+        GOTrumpet4.GetComponent<Collider>().enabled = trumpet4Active;
     }
 
     void mergeTrumpets(GameObject piece)
