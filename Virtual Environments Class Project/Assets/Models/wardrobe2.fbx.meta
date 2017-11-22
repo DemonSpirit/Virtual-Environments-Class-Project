@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: c0545adeae5e32c4a9426d72554295c7
+timeCreated: 1511365168
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: dolap 01
+    100002: Object_1
+    100004: Object_10
+    100006: Object_11
+    100008: Object_12
+    100010: Object_13
+    100012: Object_14
+    100014: Object_15
+    100016: Object_16
+    100018: Object_17
+    100020: Object_3
+    100022: Object_4
+    100024: Object_5
+    100026: Object_6
+    100028: Object_6 1
+    100030: Object_7
+    100032: Object_8
+    100034: Object_9
+    100036: transform16
+    100038: transform17
+    100040: transform18
+    100042: transform19
+    100044: transform20
+    100046: transform21
+    100048: transform22
+    100050: transform23
+    100052: transform24
+    100054: transform25
+    100056: transform26
+    100058: transform27
+    100060: transform28
+    100062: transform29
+    100064: transform30
+    100066: transform31
+    100068: //RootNode
+    400000: dolap 01
+    400002: Object_1
+    400004: Object_10
+    400006: Object_11
+    400008: Object_12
+    400010: Object_13
+    400012: Object_14
+    400014: Object_15
+    400016: Object_16
+    400018: Object_17
+    400020: Object_3
+    400022: Object_4
+    400024: Object_5
+    400026: Object_6
+    400028: Object_6 1
+    400030: Object_7
+    400032: Object_8
+    400034: Object_9
+    400036: transform16
+    400038: transform17
+    400040: transform18
+    400042: transform19
+    400044: transform20
+    400046: transform21
+    400048: transform22
+    400050: transform23
+    400052: transform24
+    400054: transform25
+    400056: transform26
+    400058: transform27
+    400060: transform28
+    400062: transform29
+    400064: transform30
+    400066: transform31
+    400068: //RootNode
+    2300000: Object_6
+    3300000: Object_6
+    4300000: Object_6
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert10
+    second: {fileID: 2100000, guid: d5727a14da048f84c92019d724563101, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert6
+    second: {fileID: 2100000, guid: 5931287464492e849af09a66811a5c28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert7
+    second: {fileID: 2100000, guid: cdf58c64ad62729458582937caf3c89f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert8
+    second: {fileID: 2100000, guid: 14436f97476dd624d9c6a2d58e308fac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert9
+    second: {fileID: 2100000, guid: 3a2be61d39390b341af09b8e25ca411f, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
