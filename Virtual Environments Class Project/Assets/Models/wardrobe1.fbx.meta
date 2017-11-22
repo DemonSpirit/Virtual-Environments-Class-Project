@@ -1,64 +1,46 @@
 fileFormatVersion: 2
-guid: 51dbddd30ab75ce47949f76eebe92f1c
-timeCreated: 1510919681
+guid: 68fd453cb3b2aad4d8ef58e93fb6712e
+timeCreated: 1511364602
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Object_1446
-    100004: Object_1447
-    100006: Object_1448
-    100008: Object_1449
-    100010: Object_1449 1
-    100012: Object_1450
-    100014: Object_1451
-    100016: Object_1451 1
-    100018: Object_1452
-    100020: Object_1452 1
-    100022: sehpa
-    100024: transform10
-    100026: transform12
-    100028: transform5
-    100030: transform6
-    100032: transform7
-    100034: transform8
-    100036: transform9
-    400000: //RootNode
-    400002: Object_1446
-    400004: Object_1447
-    400006: Object_1448
-    400008: Object_1449
-    400010: Object_1449 1
-    400012: Object_1450
-    400014: Object_1451
-    400016: Object_1451 1
-    400018: Object_1452
-    400020: Object_1452 1
-    400022: sehpa
-    400024: transform10
-    400026: transform12
-    400028: transform5
-    400030: transform6
-    400032: transform7
-    400034: transform8
-    400036: transform9
-    2300000: Object_1449
-    2300002: Object_1451
-    2300004: Object_1452
-    3300000: Object_1449
-    3300002: Object_1451
-    3300004: Object_1452
-    4300000: Object_1451
-    4300002: Object_1452
-    4300004: Object_1449
+    100000: Object_1449
+    100002: Object_1451
+    100004: Object_1452
+    100006: Object_1453
+    100008: transform13
+    100010: transform14
+    100012: transform15
+    100014: //RootNode
+    400000: Object_1449
+    400002: Object_1451
+    400004: Object_1452
+    400006: Object_1453
+    400008: transform13
+    400010: transform14
+    400012: transform15
+    400014: //RootNode
+    2300000: Object_1453
+    3300000: Object_1453
+    4300000: Object_1453
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lambert6
-    second: {fileID: 2100000, guid: 5931287464492e849af09a66811a5c28, type: 2}
+      name: lambert7
+    second: {fileID: 2100000, guid: cdf58c64ad62729458582937caf3c89f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert8
+    second: {fileID: 2100000, guid: 14436f97476dd624d9c6a2d58e308fac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert9
+    second: {fileID: 2100000, guid: 3a2be61d39390b341af09b8e25ca411f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
