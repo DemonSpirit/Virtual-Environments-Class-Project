@@ -15,6 +15,11 @@ ModelImporter:
     100014: Object_1483
     100016: transform3
     100018: transform4
+    100020: Object_1479 1
+    100022: transform16
+    100024: transform17
+    100026: transform18
+    100028: transform19
     400000: //RootNode
     400002: "kap\u0131"
     400004: Object_1479
@@ -25,6 +30,11 @@ ModelImporter:
     400014: Object_1483
     400016: transform3
     400018: transform4
+    400020: Object_1479 1
+    400022: transform16
+    400024: transform17
+    400026: transform18
+    400028: transform19
     2300000: Object_1479
     2300002: Object_1480
     2300004: Object_1482
