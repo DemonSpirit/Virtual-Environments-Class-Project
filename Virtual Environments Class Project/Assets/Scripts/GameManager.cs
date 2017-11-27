@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour {
 
 	void Awake()
 	{
-		VRCharacter.SetActive(isVR);
-		FPSCharacter.SetActive(!isVR);
+		//VRCharacter.SetActive(isVR);
+		//FPSCharacter.SetActive(!isVR);
 	}
 
 	// Use this for initialization
