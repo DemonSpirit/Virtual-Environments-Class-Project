@@ -43,7 +43,7 @@ public class HideScript : MonoBehaviour {
 		for (int i = 1; i < roomOrigins.Count; i++)
 		{
 			for (int j = 0; j < objectFolders[i].childCount; j++)
-				ObjectAppear(objectFolders[i].GetChild(j).gameObject, false);
+				ObjectAppearV2(objectFolders[i].GetChild(j).gameObject, false);
 			
 			PositionObjectFolder(i, 0);
 		}
@@ -97,9 +97,9 @@ public class HideScript : MonoBehaviour {
 		{
 			GameObject obj = objectsToDisappear[i];
 
-			if (!CanSeeObject(obj))
+			if (!CanSeeObjectV2(obj))
 			{
-				ObjectAppear(obj, false);
+				ObjectAppearV2(obj, false);
 				objectsToDisappear.Remove(obj);
 				i--;
 				count--;
@@ -119,18 +119,18 @@ public class HideScript : MonoBehaviour {
 
 
 			// Makes sure certain new objects are not directly visible, but should become
-			if (CanSeeObject(obj))
+			if (CanSeeObjectV2(obj))
 			{
 				// If we meet the same room objects again. TODO: make sure it works well with ECE and DORUK stuff
-				if (obj.GetComponent<Renderer>().enabled)
+				if (ObjectIsRendered(obj))
 					continue;
-				ObjectAppear(obj, false);
+				ObjectAppearV2(obj, false);
 				//obj.SetActive(false);
 			}
 
 			// New objects that are not directly visible can already appear
 			else {
-				ObjectAppear(obj, true);
+				ObjectAppearV2(obj, true);
 			}
 
 		}
@@ -141,14 +141,14 @@ public class HideScript : MonoBehaviour {
 			GameObject obj = objectFolders[previousRoomNumber].GetChild(i).gameObject;
 
 			// Adds objects from previous room that you still can see but still need to be removed, to objectsToDisappear list
-			if (CanSeeObject(obj))
+			if (CanSeeObjectV2(obj))
 				{
 					objectsToDisappear.Add(obj);
 				}
 				
 			// Previous objects that you already don't see can already disappear.
 			else {
-					ObjectAppear(obj, false);
+					ObjectAppearV2(obj, false);
 				}
 		}
 			
@@ -161,9 +161,9 @@ public class HideScript : MonoBehaviour {
 		{
 			GameObject obj = objectFolders[newRoom].GetChild(i).gameObject;
 
-			if (!CanSeeObject(obj))
+			if (!CanSeeObjectV2(obj))
 			{
-				ObjectAppear(obj, true);
+				ObjectAppearV2(obj, true);
 				//obj.SetActive(true);
 			}
 		}
@@ -230,17 +230,30 @@ public class HideScript : MonoBehaviour {
 	// TODO: make this work
 	bool CanSeeObjectV2(GameObject obj)
 	{
-		Plane[] planes = GeometryUtility.CalculateFrustumPlanes(playerCam);
 		Collider[] colls = obj.GetComponents<Collider>();
+		Plane[] planes = GeometryUtility.CalculateFrustumPlanes(playerCam);
+
+		// Check if we can see atleast one collider from current object
 		if (colls.Length > 0)
 		{
 			foreach(Collider coll in colls)
 			{
-				if (GeometryUtility.TestPlanesAABB(planes, obj.GetComponent<Collider>().bounds))
+				if (GeometryUtility.TestPlanesAABB(planes, coll.bounds))
 					return true;
 			}
 		}
 
+		// If current object has children, do the step above recursively to each child
+		if (obj.transform.childCount > 0)
+		{
+			for (int i = 0; i < obj.transform.childCount; i++)
+			{
+				if (CanSeeObjectV2(obj.transform.GetChild(i).gameObject))
+					return true;
+			}
+		}
+
+		// Can't see any colliders from current and children objects
 		return false;
 	}
 
@@ -261,9 +274,9 @@ public class HideScript : MonoBehaviour {
 		if (rb != null)
 			obj.GetComponent<Rigidbody>().isKinematic = !shouldAppear;
 
-		Renderer rend = obj.GetComponent<Renderer>();
 
 		// Renderer should be either enabled or not
+		Renderer rend = obj.GetComponent<Renderer>();
 		if (rend != null)
 		{
 			obj.GetComponent<Renderer>().enabled = shouldAppear;
@@ -274,10 +287,38 @@ public class HideScript : MonoBehaviour {
 		if (obj.transform.childCount == 0)
 			return;
 
-		// Do the same for all childs
+
+		// Do the same for all children
 		for (int i = 0; i < obj.transform.childCount; i++)
 		{
 			ObjectAppearV2(obj.transform.GetChild(i).gameObject, shouldAppear);
+		}
+	}
+
+
+	// Check if current obj or children objects are currently rendered
+	bool ObjectIsRendered(GameObject obj)
+	{
+		Renderer rend = obj.GetComponent<Renderer>();
+
+		// If obj has no renderer
+		if (rend == null)
+		{
+			// Check if atleast one of the children is rendered
+			for (int i = 0; i < obj.transform.childCount; i++)
+			{
+				if (ObjectIsRendered(obj.transform.GetChild(i).gameObject))
+					return true;
+			}
+
+			// If it has no children
+			// or if none of the children are rendered
+			return false;
+		}
+
+		// If obj has a renderer
+		else {
+			return rend.enabled;
 		}
 	}
 }
