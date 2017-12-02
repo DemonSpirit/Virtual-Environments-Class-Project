@@ -280,8 +280,6 @@ public class HideScript : MonoBehaviour {
 		if (rend != null)
 		{
 			obj.GetComponent<Renderer>().enabled = shouldAppear;
-			// it must be the last child I guess
-			return;
 		}
 
 		if (obj.transform.childCount == 0)
