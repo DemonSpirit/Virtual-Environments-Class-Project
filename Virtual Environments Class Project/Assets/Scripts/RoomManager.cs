@@ -44,7 +44,7 @@ public class RoomManager : MonoBehaviour
         for (int i = 1; i < roomOrigins.Count; i++)
         {
             for (int j = 0; j < objectFolders[i].childCount; j++)
-                ObjectAppearV2(objectFolders[i].GetChild(j).gameObject, false);
+                ObjectAppearV2(objectFolders[i].GetChild(j).gameObject, false, true);
 
             PositionObjectFolder(i, 0);
         }
@@ -266,8 +266,9 @@ public class RoomManager : MonoBehaviour
         return false;
     }
 
-    void ObjectAppearV2(GameObject obj, bool shouldAppear)
+    void ObjectAppearV2(GameObject obj, bool shouldAppear, bool force = false)
     {
+        if (!shouldAppear && obj.tag == "Unremovable" && !force) return;
         // All colliders should be either trigger or not
         Collider[] colls = obj.GetComponents<Collider>();
         if (colls.Length > 0)

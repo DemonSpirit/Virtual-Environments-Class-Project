@@ -7495,7 +7495,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4545085186211014, guid: 5eda00d4d4ecedb4d9254cb0df321e31, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1221988254880504, guid: 5eda00d4d4ecedb4d9254cb0df321e31, type: 2}
       propertyPath: m_Name
@@ -10710,7 +10710,7 @@ GameObject:
   - component: {fileID: 750203293}
   m_Layer: 0
   m_Name: TrumpetPiece1
-  m_TagString: Untagged
+  m_TagString: Unremovable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10726,7 +10726,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 783581216}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &750203290
 MeshRenderer:
@@ -11204,7 +11204,7 @@ GameObject:
   - component: {fileID: 782198709}
   m_Layer: 0
   m_Name: TrumpetPiece2
-  m_TagString: Untagged
+  m_TagString: Unremovable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11473,7 +11473,6 @@ Transform:
   m_LocalPosition: {x: -7.660588, y: -16.486074, z: 34.194492}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 900053285}
   - {fileID: 1494088689}
   - {fileID: 532319338}
   - {fileID: 750203289}
@@ -18670,19 +18669,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 783581216}
+    m_TransformParent: {fileID: 1494088689}
     m_Modifications:
     - target: {fileID: 4282197886318886, guid: 18167971b0cb8334e912fe07003d77fc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.929588
+      value: -1.731
       objectReference: {fileID: 0}
     - target: {fileID: 4282197886318886, guid: 18167971b0cb8334e912fe07003d77fc, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 17.398075
+      value: 0.91200066
       objectReference: {fileID: 0}
     - target: {fileID: 4282197886318886, guid: 18167971b0cb8334e912fe07003d77fc, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -34.807
+      value: -0.61250687
       objectReference: {fileID: 0}
     - target: {fileID: 4282197886318886, guid: 18167971b0cb8334e912fe07003d77fc, type: 2}
       propertyPath: m_LocalRotation.x
@@ -18702,11 +18701,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4282197886318886, guid: 18167971b0cb8334e912fe07003d77fc, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 4282197886318886, guid: 18167971b0cb8334e912fe07003d77fc, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 58.309002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660981954688530, guid: 18167971b0cb8334e912fe07003d77fc, type: 2}
+      propertyPath: m_TagString
+      value: Unremovable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4282197886318886, guid: 18167971b0cb8334e912fe07003d77fc, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.28759998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18167971b0cb8334e912fe07003d77fc, type: 2}
@@ -19766,8 +19773,9 @@ Transform:
   - {fileID: 700286723}
   - {fileID: 923235965}
   - {fileID: 1705886509}
+  - {fileID: 900053285}
   m_Father: {fileID: 783581216}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1495305823
 GameObject:
@@ -20096,6 +20104,10 @@ Prefab:
     - target: {fileID: 400004, guid: bbb29c575e92ab64eb62ee335dc6f563, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: bbb29c575e92ab64eb62ee335dc6f563, type: 2}
+      propertyPath: m_TagString
+      value: Unremovable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bbb29c575e92ab64eb62ee335dc6f563, type: 2}
@@ -25371,7 +25383,7 @@ GameObject:
   - component: {fileID: 1856930187}
   m_Layer: 0
   m_Name: TrumpetPiece3
-  m_TagString: Untagged
+  m_TagString: Unremovable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
