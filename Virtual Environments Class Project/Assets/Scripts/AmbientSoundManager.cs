@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class AmbientSoundManager : MonoBehaviour {
 
+    [Range(0.0f, 1.0f)]
+    public float masterVolume = 1.0f;
+    private float prevMasterVolume = 1.0f;
+
     // Adult
     [SerializeField] AudioSource adultInterior;
     [SerializeField] AudioSource adultExterior;
@@ -14,22 +18,15 @@ public class AmbientSoundManager : MonoBehaviour {
     [SerializeField] AudioSource carehomeInterior;
     [SerializeField] AudioSource carehomeExterior;
 
-    private float indoorVolume = 0.6f;
-    private float outdoorVolume = 0.05f;
+    private float interiorVolume = 0.6f;
+    private float exteriorVolume = 0.05f;
 
-    private float currAdultIndoorVol = 0.0f;
-    private float currAdultOutdoorVol = 0.0f;
-    private float currChildIndoorVol = 0.0f;
-    private float currChildOutdoorVol = 0.0f;
-    private float currCarehomeIndoorVol = 0.0f;
-    private float currCarehomeOutdoorVol = 0.0f;
-
-    private float currAdultIndoorVolDiff = 0.0f;
-    private float currAdultOutdoorVolDiff = 0.0f;
-    private float currChildIndoorVolDiff = 0.0f;
-    private float currChildOutdoorVolDiff = 0.0f;
-    private float currCarehomeIndoorVolDiff = 0.0f;
-    private float currCarehomeOutdoorVolDiff = 0.0f;
+    private float currAdultInteriorVol = 0.0f;
+    private float currAdultExteriorVol = 0.0f;
+    private float currChildInteriorVol = 0.0f;
+    private float currChildExteriorVol = 0.0f;
+    private float currCarehomeInteriorVol = 0.0f;
+    private float currCarehomeExteriorVol = 0.0f;
 
     private float transitionTimer = 0.0f;
 
@@ -39,26 +36,13 @@ public class AmbientSoundManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//if (adultInterior.volume < currAdultIndoorVol) adultInterior.volume 
-	}
-
-    public void transitionVolume(int roomID, float time = 3.0f)
-    {
-
-    }
-
-    public void setCurrentVolume(float vol)
-    {
-
-    }
-
-    public void transitionToRoom(int roomID, float time = 3.0f)
-    {
-        switch (roomID)
-        {
-            case 0:
-                //currAdultIndoorVol
-                break;
-        }
+        if (prevMasterVolume == masterVolume) return;
+        adultInterior.volume = currAdultInteriorVol / 1.0f * masterVolume;
+        adultExterior.volume = currAdultExteriorVol / 1.0f * masterVolume;
+        childInterior.volume = currChildInteriorVol / 1.0f * masterVolume;
+        childExterior.volume = currChildExteriorVol / 1.0f * masterVolume;
+        carehomeInterior.volume = currCarehomeInteriorVol / 1.0f * masterVolume;
+        carehomeExterior.volume = currCarehomeExteriorVol / 1.0f * masterVolume;
+        prevMasterVolume = masterVolume;
     }
 }

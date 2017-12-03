@@ -9,6 +9,7 @@ public class ObjectGazeTrigger : MonoBehaviour {
     [SerializeField] Camera mainCamera;
     [SerializeField] GameObject roomController;
     [SerializeField] GameObject lightManager;
+    [SerializeField] GameObject ambientManager;
     [SerializeField] Light spotlight;
     //[SerializeField] Light 
 
@@ -59,6 +60,9 @@ public class ObjectGazeTrigger : MonoBehaviour {
             {
                 roomController.GetComponent<HideScript>().moveToRoom(roomID);
                 selected = true;
+            } else
+            {
+                spotlight.intensity += 0.1f;
             }
             selecting = true;
             float range = 1.0f / 100.0f * (100.0f - dist); // Range between 0.0f and 1.0f for the focus distance
@@ -66,7 +70,6 @@ public class ObjectGazeTrigger : MonoBehaviour {
             pulseInterval = 0.3f;
             // THIS IS WHERE THE EFFECT IS SET
             lightManager.GetComponent<LightManager>().intensity = 0.0f;
-            spotlight.intensity = 1.0f;
             currTriggerTime += Time.deltaTime;
             pulseInterval = 0.3f - (currTriggerTime / 1.0f);
         }
@@ -92,9 +95,8 @@ public class ObjectGazeTrigger : MonoBehaviour {
         if (currPulse > 0.0f) {
             pulseTimer += Time.deltaTime;
             if (pulseTimer > pulseInterval) {
-                Debug.Log("PULSE");
                 SteamVR_Controller.Input(1).TriggerHapticPulse((ushort)currPulse);
-                SteamVR_Controller.Input(3).TriggerHapticPulse((ushort)currPulse);
+                SteamVR_Controller.Input(2).TriggerHapticPulse((ushort)currPulse);
                 pulseTimer = 0.0f;
             }
         }   

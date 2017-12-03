@@ -37,6 +37,8 @@ public class LightManager : MonoBehaviour {
             LightObject lo = lights[i];
             lo.light.intensity = lo.origIntensity / 1.0f * intensity;
         }
+
+        prevIntensity = intensity;
     }
 }
 
