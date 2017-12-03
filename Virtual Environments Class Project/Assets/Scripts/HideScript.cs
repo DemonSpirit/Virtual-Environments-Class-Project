@@ -38,7 +38,6 @@ public class HideScript : MonoBehaviour {
     {
 		objectsToDisappear = new List<GameObject>();
 
-
 		//Puts every timeline object in the main room
 		for (int i = 1; i < roomOrigins.Count; i++)
 		{
@@ -181,6 +180,7 @@ public class HideScript : MonoBehaviour {
 		for (int i = 0; i < objectFolders[startRoom].childCount; i++)
 		{
 			GameObject obj = objectFolders[startRoom].GetChild(i).gameObject;
+			//print(obj.name + " - add distance: " + dist);
 			obj.transform.position += dist;
 		}
 	}
