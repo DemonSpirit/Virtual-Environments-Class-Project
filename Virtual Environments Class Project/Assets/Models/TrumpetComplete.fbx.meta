@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: 55ab9ce13c11e4a3f8932b3610f334af
+timeCreated: 1512322388
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Trumpet.1_MeshPart0
+    100002: Trumpet.1_MeshPart1
+    100004: Trumpet.1_MeshPart10
+    100006: Trumpet.1_MeshPart11
+    100008: Trumpet.1_MeshPart12
+    100010: Trumpet.1_MeshPart13
+    100012: Trumpet.1_MeshPart14
+    100014: Trumpet.1_MeshPart15
+    100016: Trumpet.1_MeshPart16
+    100018: Trumpet.1_MeshPart17
+    100020: Trumpet.1_MeshPart18
+    100022: Trumpet.1_MeshPart19
+    100024: Trumpet.1_MeshPart2
+    100026: Trumpet.1_MeshPart20
+    100028: Trumpet.1_MeshPart21
+    100030: Trumpet.1_MeshPart22
+    100032: Trumpet.1_MeshPart23
+    100034: Trumpet.1_MeshPart24
+    100036: Trumpet.1_MeshPart25
+    100038: Trumpet.1_MeshPart26
+    100040: Trumpet.1_MeshPart27
+    100042: Trumpet.1_MeshPart28
+    100044: Trumpet.1_MeshPart29
+    100046: Trumpet.1_MeshPart3
+    100048: Trumpet.1_MeshPart30
+    100050: Trumpet.1_MeshPart31
+    100052: Trumpet.1_MeshPart32
+    100054: Trumpet.1_MeshPart4
+    100056: Trumpet.1_MeshPart5
+    100058: Trumpet.1_MeshPart6
+    100060: Trumpet.1_MeshPart7
+    100062: Trumpet.1_MeshPart8
+    100064: Trumpet.1_MeshPart9
+    100066: //RootNode
+    400000: Trumpet.1_MeshPart0
+    400002: Trumpet.1_MeshPart1
+    400004: Trumpet.1_MeshPart10
+    400006: Trumpet.1_MeshPart11
+    400008: Trumpet.1_MeshPart12
+    400010: Trumpet.1_MeshPart13
+    400012: Trumpet.1_MeshPart14
+    400014: Trumpet.1_MeshPart15
+    400016: Trumpet.1_MeshPart16
+    400018: Trumpet.1_MeshPart17
+    400020: Trumpet.1_MeshPart18
+    400022: Trumpet.1_MeshPart19
+    400024: Trumpet.1_MeshPart2
+    400026: Trumpet.1_MeshPart20
+    400028: Trumpet.1_MeshPart21
+    400030: Trumpet.1_MeshPart22
+    400032: Trumpet.1_MeshPart23
+    400034: Trumpet.1_MeshPart24
+    400036: Trumpet.1_MeshPart25
+    400038: Trumpet.1_MeshPart26
+    400040: Trumpet.1_MeshPart27
+    400042: Trumpet.1_MeshPart28
+    400044: Trumpet.1_MeshPart29
+    400046: Trumpet.1_MeshPart3
+    400048: Trumpet.1_MeshPart30
+    400050: Trumpet.1_MeshPart31
+    400052: Trumpet.1_MeshPart32
+    400054: Trumpet.1_MeshPart4
+    400056: Trumpet.1_MeshPart5
+    400058: Trumpet.1_MeshPart6
+    400060: Trumpet.1_MeshPart7
+    400062: Trumpet.1_MeshPart8
+    400064: Trumpet.1_MeshPart9
+    400066: //RootNode
+    2300000: Trumpet.1_MeshPart0
+    2300002: Trumpet.1_MeshPart1
+    2300004: Trumpet.1_MeshPart10
+    2300006: Trumpet.1_MeshPart11
+    2300008: Trumpet.1_MeshPart12
+    2300010: Trumpet.1_MeshPart13
+    2300012: Trumpet.1_MeshPart14
+    2300014: Trumpet.1_MeshPart15
+    2300016: Trumpet.1_MeshPart16
+    2300018: Trumpet.1_MeshPart17
+    2300020: Trumpet.1_MeshPart18
+    2300022: Trumpet.1_MeshPart19
+    2300024: Trumpet.1_MeshPart2
+    2300026: Trumpet.1_MeshPart20
+    2300028: Trumpet.1_MeshPart21
+    2300030: Trumpet.1_MeshPart22
+    2300032: Trumpet.1_MeshPart23
+    2300034: Trumpet.1_MeshPart24
+    2300036: Trumpet.1_MeshPart25
+    2300038: Trumpet.1_MeshPart26
+    2300040: Trumpet.1_MeshPart27
+    2300042: Trumpet.1_MeshPart28
+    2300044: Trumpet.1_MeshPart29
+    2300046: Trumpet.1_MeshPart3
+    2300048: Trumpet.1_MeshPart30
+    2300050: Trumpet.1_MeshPart31
+    2300052: Trumpet.1_MeshPart32
+    2300054: Trumpet.1_MeshPart4
+    2300056: Trumpet.1_MeshPart5
+    2300058: Trumpet.1_MeshPart6
+    2300060: Trumpet.1_MeshPart7
+    2300062: Trumpet.1_MeshPart8
+    2300064: Trumpet.1_MeshPart9
+    3300000: Trumpet.1_MeshPart0
+    3300002: Trumpet.1_MeshPart1
+    3300004: Trumpet.1_MeshPart10
+    3300006: Trumpet.1_MeshPart11
+    3300008: Trumpet.1_MeshPart12
+    3300010: Trumpet.1_MeshPart13
+    3300012: Trumpet.1_MeshPart14
+    3300014: Trumpet.1_MeshPart15
+    3300016: Trumpet.1_MeshPart16
+    3300018: Trumpet.1_MeshPart17
+    3300020: Trumpet.1_MeshPart18
+    3300022: Trumpet.1_MeshPart19
+    3300024: Trumpet.1_MeshPart2
+    3300026: Trumpet.1_MeshPart20
+    3300028: Trumpet.1_MeshPart21
+    3300030: Trumpet.1_MeshPart22
+    3300032: Trumpet.1_MeshPart23
+    3300034: Trumpet.1_MeshPart24
+    3300036: Trumpet.1_MeshPart25
+    3300038: Trumpet.1_MeshPart26
+    3300040: Trumpet.1_MeshPart27
+    3300042: Trumpet.1_MeshPart28
+    3300044: Trumpet.1_MeshPart29
+    3300046: Trumpet.1_MeshPart3
+    3300048: Trumpet.1_MeshPart30
+    3300050: Trumpet.1_MeshPart31
+    3300052: Trumpet.1_MeshPart32
+    3300054: Trumpet.1_MeshPart4
+    3300056: Trumpet.1_MeshPart5
+    3300058: Trumpet.1_MeshPart6
+    3300060: Trumpet.1_MeshPart7
+    3300062: Trumpet.1_MeshPart8
+    3300064: Trumpet.1_MeshPart9
+    4300000: Trumpet.1_MeshPart0
+    4300002: Trumpet.1_MeshPart1
+    4300004: Trumpet.1_MeshPart2
+    4300006: Trumpet.1_MeshPart3
+    4300008: Trumpet.1_MeshPart4
+    4300010: Trumpet.1_MeshPart5
+    4300012: Trumpet.1_MeshPart6
+    4300014: Trumpet.1_MeshPart7
+    4300016: Trumpet.1_MeshPart8
+    4300018: Trumpet.1_MeshPart9
+    4300020: Trumpet.1_MeshPart10
+    4300022: Trumpet.1_MeshPart11
+    4300024: Trumpet.1_MeshPart12
+    4300026: Trumpet.1_MeshPart13
+    4300028: Trumpet.1_MeshPart14
+    4300030: Trumpet.1_MeshPart15
+    4300032: Trumpet.1_MeshPart16
+    4300034: Trumpet.1_MeshPart17
+    4300036: Trumpet.1_MeshPart18
+    4300038: Trumpet.1_MeshPart19
+    4300040: Trumpet.1_MeshPart20
+    4300042: Trumpet.1_MeshPart21
+    4300044: Trumpet.1_MeshPart22
+    4300046: Trumpet.1_MeshPart23
+    4300048: Trumpet.1_MeshPart24
+    4300050: Trumpet.1_MeshPart25
+    4300052: Trumpet.1_MeshPart26
+    4300054: Trumpet.1_MeshPart27
+    4300056: Trumpet.1_MeshPart28
+    4300058: Trumpet.1_MeshPart29
+    4300060: Trumpet.1_MeshPart30
+    4300062: Trumpet.1_MeshPart31
+    4300064: Trumpet.1_MeshPart32
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: aa19b1de015f64bd38e3e4ee40683e12, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
