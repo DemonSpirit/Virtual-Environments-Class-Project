@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: 9c0c8fb524b4748058dcb6e2cbfc720a
+timeCreated: 18446744011573954816
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cap_1
+    100004: Cap_1_2
+    100006: Cap_2
+    100008: Cap_2_2
+    100010: Cord_normal
+    100012: Cord_Table
+    100014: Hook_Switch
+    100016: Phone_List
+    100018: ReceiverNormal
+    100020: ReceiverOnTable
+    100022: Snap_On_Phone_List
+    100024: Spline
+    100026: Spline_2
+    100028: Spline_3
+    100030: Spline_4
+    100032: Stand
+    100034: Transmitter
+    400000: //RootNode
+    400002: Cap_1
+    400004: Cap_1_2
+    400006: Cap_2
+    400008: Cap_2_2
+    400010: Cord_normal
+    400012: Cord_Table
+    400014: Hook_Switch
+    400016: Phone_List
+    400018: ReceiverNormal
+    400020: ReceiverOnTable
+    400022: Snap_On_Phone_List
+    400024: Spline
+    400026: Spline_2
+    400028: Spline_3
+    400030: Spline_4
+    400032: Stand
+    400034: Transmitter
+    2300000: Cap_1
+    2300002: Cap_1_2
+    2300004: Cap_2
+    2300006: Cap_2_2
+    2300008: Cord_normal
+    2300010: Cord_Table
+    2300012: Hook_Switch
+    2300014: Phone_List
+    2300016: ReceiverNormal
+    2300018: ReceiverOnTable
+    2300020: Snap_On_Phone_List
+    2300022: Stand
+    2300024: Transmitter
+    3300000: Cap_1
+    3300002: Cap_1_2
+    3300004: Cap_2
+    3300006: Cap_2_2
+    3300008: Cord_normal
+    3300010: Cord_Table
+    3300012: Hook_Switch
+    3300014: Phone_List
+    3300016: ReceiverNormal
+    3300018: ReceiverOnTable
+    3300020: Snap_On_Phone_List
+    3300022: Stand
+    3300024: Transmitter
+    4300000: Cord_normal
+    4300002: Cap_1
+    4300004: Cap_2
+    4300006: Cord_Table
+    4300008: Cap_1_2
+    4300010: Cap_2_2
+    4300012: Snap_On_Phone_List
+    4300014: Phone_List
+    4300016: Hook_Switch
+    4300018: Transmitter
+    4300020: ReceiverNormal
+    4300022: ReceiverOnTable
+    4300024: Stand
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
