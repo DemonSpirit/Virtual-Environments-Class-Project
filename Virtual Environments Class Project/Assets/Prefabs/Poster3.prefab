@@ -9,46 +9,45 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1526071039840148}
+  m_RootGameObject: {fileID: 1430882693218660}
   m_IsPrefabParent: 1
---- !u!1 &1526071039840148
+--- !u!1 &1430882693218660
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4928759580229728}
-  - component: {fileID: 33166320115006908}
-  - component: {fileID: 23843048075455660}
-  - component: {fileID: 65724681806805910}
-  - component: {fileID: 65353301952398586}
+  - component: {fileID: 4355312881451852}
+  - component: {fileID: 33572721524035970}
+  - component: {fileID: 64261005616673076}
+  - component: {fileID: 23209723106954202}
   m_Layer: 0
-  m_Name: Pillow_1
+  m_Name: Poster3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4928759580229728
+--- !u!4 &4355312881451852
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1526071039840148}
-  m_LocalRotation: {x: 0.03155294, y: 2.8327352e-24, z: 7.006165e-18, w: 0.9995021}
-  m_LocalPosition: {x: -0.814, y: 0.254, z: -1.902}
-  m_LocalScale: {x: 48.75737, y: 48.757378, z: 48.757378}
+  m_GameObject: {fileID: 1430882693218660}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.021, y: 2.488, z: 1.903}
+  m_LocalScale: {x: 0.67044467, y: 0.922545, z: 0.7397809}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23843048075455660
+--- !u!23 &23209723106954202
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1526071039840148}
+  m_GameObject: {fileID: 1430882693218660}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 675be8d962ea7d642a80ebce399b73a2, type: 2}
+  - {fileID: 2100000, guid: 1a96086197a4ff94da5e706e28f1d8b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -65,7 +64,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
+  m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 0
@@ -77,34 +76,24 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33166320115006908
+--- !u!33 &33572721524035970
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1526071039840148}
-  m_Mesh: {fileID: 4300002, guid: bc7c26d9e5732fb4e9694d56f647dd27, type: 3}
---- !u!65 &65353301952398586
-BoxCollider:
+  m_GameObject: {fileID: 1430882693218660}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64261005616673076
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1526071039840148}
+  m_GameObject: {fileID: 1430882693218660}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.01635195, y: 0.010367327, z: 0.0039067375}
-  m_Center: {x: -0.0003233604, y: 0.0019545415, z: -0.0047713034}
---- !u!65 &65724681806805910
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1526071039840148}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.017802922, y: 0.0027247737, z: 0.014434306}
-  m_Center: {x: -0.00044472556, y: -0.0011448947, z: 0.00049246766}
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
