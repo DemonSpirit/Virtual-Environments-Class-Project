@@ -8,6 +8,9 @@ public class ObjectGazeTrigger : MonoBehaviour {
     [SerializeField] int roomID = 0;
     [SerializeField] Camera mainCamera;
     [SerializeField] GameObject roomController;
+    [SerializeField] GameObject lightManager;
+    [SerializeField] Light spotlight;
+    //[SerializeField] Light 
 
     // Deadspots
     float deadSpot = 200.0f;
@@ -22,7 +25,7 @@ public class ObjectGazeTrigger : MonoBehaviour {
     private float currTriggerTime = 0.0f; // Length of time that the object has currently been directly looked at uninterrupeted.
     [SerializeField] float totalTriggerTime = 3.0f; // Total number of seconds that an object must be look at to trigger the change.
 
-    // 
+    // Selection booleans
     private bool selecting = false;
     private bool selected = false;
 
@@ -54,31 +57,34 @@ public class ObjectGazeTrigger : MonoBehaviour {
             // If the object has been directly looked at for 3 seconds, trigger the timeline change.
             if (currTriggerTime > 3.0f && !selected)
             {
-                roomController.GetComponent<HideScript>().moveToNextRoom();
+                roomController.GetComponent<HideScript>().moveToRoom(roomID);
                 selected = true;
             }
             selecting = true;
-            float range = 1.0f / 100.0f * (100.0f - dist);
-            currPulse = 3000.0f;
+            float range = 1.0f / 100.0f * (100.0f - dist); // Range between 0.0f and 1.0f for the focus distance
+            currPulse = 3000.0f; // Set the pulse to the 
             pulseInterval = 0.3f;
-            GetComponent<Renderer>().material.color = new Color(1.0f, currTriggerTime/3.0f, currTriggerTime/3.0f);
+            // THIS IS WHERE THE EFFECT IS SET
+            lightManager.GetComponent<LightManager>().intensity = 0.0f;
+            spotlight.intensity = 1.0f;
             currTriggerTime += Time.deltaTime;
             pulseInterval = 0.3f - (currTriggerTime / 1.0f);
         }
+        // If the distance is less
         else if (dist < deadSpot)
         {
             float range = 1.0f / 100.0f * (100.0f - (dist - 100.0f));
             currPulse = 3000.0f * range;
-            float r = 255.0f * range;
+            lightManager.GetComponent<LightManager>().intensity = 1.0f - range;
+            spotlight.intensity = range;
             pulseInterval = 0.5f;
-            GetComponent<Renderer>().material.color = new Color(range, 0, 0);
             selecting = false;
         }
         else
         {
             currPulse = 0.0f;
             pulseInterval = 1.0f;
-            GetComponent<Renderer>().material.color = Color.black;
+            //GetComponent<Renderer>().material.color = Color.black;
             selecting = false;
             selected = false;
         }
@@ -88,7 +94,7 @@ public class ObjectGazeTrigger : MonoBehaviour {
             if (pulseTimer > pulseInterval) {
                 Debug.Log("PULSE");
                 SteamVR_Controller.Input(1).TriggerHapticPulse((ushort)currPulse);
-                SteamVR_Controller.Input(4).TriggerHapticPulse((ushort)currPulse);
+                SteamVR_Controller.Input(3).TriggerHapticPulse((ushort)currPulse);
                 pulseTimer = 0.0f;
             }
         }   

@@ -16,7 +16,6 @@ public class ObjectGazeTriggerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(Input.GetButtonDown("14"));
 
         Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position);
         float dist = Vector2.Distance(new Vector2(screenPos.x, screenPos.y), new Vector2(0, 0));

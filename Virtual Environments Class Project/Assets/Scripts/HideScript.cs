@@ -24,6 +24,10 @@ public class HideScript : MonoBehaviour {
 	int currentRoomNumber = 0;
 	bool shouldEmptyRoom;
 
+    // 0 - Childs Room
+    // 1 - Adults Room
+    // 2 - Carehome Room
+
 	void Awake()
 	{
 		// In case the camera is not assigned
@@ -73,10 +77,15 @@ public class HideScript : MonoBehaviour {
         ChangeRoomState(nextRoom);
         shouldEmptyRoom = true;
     }
-		
 
-	// Makes sure certain new objects are not directly visible
-	void ChangeRoomState(int newRoomNumber)
+    public void moveToRoom(int roomID)
+    {
+        ChangeRoomState(roomID);
+        shouldEmptyRoom = true;
+    }
+
+    // Makes sure certain new objects are not directly visible
+    void ChangeRoomState(int newRoomNumber)
 	{
 
 		previousRoomNumber = currentRoomNumber;
