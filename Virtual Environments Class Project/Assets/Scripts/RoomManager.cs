@@ -19,8 +19,10 @@ public class RoomManager : MonoBehaviour
 
 
     int previousRoomNumber = -1;
-    int currentRoomNumber = 0;
+    public int currentRoomNumber = 0;
     bool shouldEmptyRoom;
+
+    public bool[] roomVisited = new bool[3];
 
     // 0 - Childs Room
     // 1 - Adults Room
@@ -38,6 +40,8 @@ public class RoomManager : MonoBehaviour
 
     void Start()
     {
+        roomVisited[0] = true;
+        roomVisited[1] = roomVisited[2] = false;
         objectsToDisappear = new List<GameObject>();
 
         //Puts every timeline object in the main room

@@ -13,11 +13,8 @@ public class GameManager : MonoBehaviour {
 
     public int currentRoom = 0;
 
-    bool[] roomVisited = new bool[3];
-
     void Awake()
 	{
-        roomVisited[0] = roomVisited[1] = roomVisited[2] = false;
 		VRCharacter.SetActive(isVR);
 		FPSCharacter.SetActive(!isVR);
 	}
@@ -34,9 +31,10 @@ public class GameManager : MonoBehaviour {
 
     public void trumpetPieceGoToRoom(int roomID)
     {
-        if (!roomVisited[roomID])
+        if (!roomManager.GetComponent<RoomManager>().roomVisited[roomID])
         {
             roomManager.GetComponent<RoomManager>().moveToRoom(roomID);
+            roomManager.GetComponent<RoomManager>().roomVisited[roomID] = true;
         }
     }
 }

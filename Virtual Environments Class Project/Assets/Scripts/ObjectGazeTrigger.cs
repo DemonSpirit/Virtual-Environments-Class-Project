@@ -7,7 +7,7 @@ public class ObjectGazeTrigger : MonoBehaviour {
     // Inspector fields
     [SerializeField] int roomID = 0;
     [SerializeField] Camera mainCamera;
-    [SerializeField] GameObject roomController;
+    [SerializeField] GameObject roomManager;
     [SerializeField] GameObject lightManager;
     [SerializeField] GameObject ambientManager;
     [SerializeField] Light spotlight;
@@ -38,58 +38,72 @@ public class ObjectGazeTrigger : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if (roomManager.GetComponent<RoomManager>().currentRoomNumber == roomID) return;
         // Get the 2D position of the object on the screen.
         Vector3 screenPos = mainCamera.WorldToScreenPoint(transform.position);
         // Get the distance of the object from the center of the screen. 
         // On the Vive, this is x770 y840 for some reason.
         float dist = Vector2.Distance(new Vector2(screenPos.x, screenPos.y), new Vector2(770, 840));
+        float distz = Vector3.Distance(mainCamera.transform.position, transform.position);
 
         // If the distance is less than the deadspot (close enough to directly looking at the object)
-        if (dist < selectionDeadSpot)
+        Debug.Log(distz);
+        if (CanSeeObjectV2(gameObject) && distz < 2.0f && roomManager.GetComponent<RoomManager>().roomVisited[roomID])
         {
-            // If the object has already been selected, ignore.
-            if (selected) return;
-            // If the object was not previously being selected, reset the currTriggerTime parameter.
-            if (!selecting)
+            if (dist < selectionDeadSpot)
             {
-                currTriggerTime = 0.0f;
+                // If the object has already been selected, ignore.
+                if (selected) return;
+                // If the object was not previously being selected, reset the currTriggerTime parameter.
+                if (!selecting)
+                {
+                    currTriggerTime = 0.0f;
 
+                }
+                // If the object has been directly looked at for 3 seconds, trigger the timeline change.
+                if (currTriggerTime > totalTriggerTime && !selected)
+                {
+                    Debug.Log("ROOM CHANGE");
+                    roomManager.GetComponent<RoomManager>().moveToRoom(roomID);
+                    lightManager.GetComponent<LightManager>().intensity = 1.0f;
+                    spotlight.intensity = 0.0f;
+
+                    selected = true;
+                }
+                else
+                {
+                    //spotlight.intensity += 0.1f;
+                }
+                selecting = true;
+                float range = 1.0f / 100.0f * (100.0f - dist); // Range between 0.0f and 1.0f for the focus distance
+                currPulse = 3000.0f; // Set the pulse to the 
+                pulseInterval = 0.3f;
+                // THIS IS WHERE THE EFFECT IS SET
+                lightManager.GetComponent<LightManager>().intensity = 0.0f;
+                currTriggerTime += Time.deltaTime;
+                pulseInterval = 0.3f - (currTriggerTime / 1.0f);
             }
-            // If the object has been directly looked at for 3 seconds, trigger the timeline change.
-            if (currTriggerTime > 3.0f && !selected)
+            // If the distance is less
+            else if (dist < deadSpot)
             {
-                roomController.GetComponent<HideScript>().moveToRoom(roomID);
-                selected = true;
-            } else
-            {
-                spotlight.intensity += 0.1f;
+                float range = 1.0f / 100.0f * (100.0f - (dist - 100.0f));
+                currPulse = 3000.0f * range;
+                lightManager.GetComponent<LightManager>().intensity = 1.0f - range;
+                ambientManager.GetComponent<AmbientSoundManager>().masterVolume = 1.0f - range;
+                spotlight.intensity = range;
+                pulseInterval = 0.5f;
+                selecting = false;
             }
-            selecting = true;
-            float range = 1.0f / 100.0f * (100.0f - dist); // Range between 0.0f and 1.0f for the focus distance
-            currPulse = 3000.0f; // Set the pulse to the 
-            pulseInterval = 0.3f;
-            // THIS IS WHERE THE EFFECT IS SET
-            lightManager.GetComponent<LightManager>().intensity = 0.0f;
-            currTriggerTime += Time.deltaTime;
-            pulseInterval = 0.3f - (currTriggerTime / 1.0f);
-        }
-        // If the distance is less
-        else if (dist < deadSpot)
-        {
-            float range = 1.0f / 100.0f * (100.0f - (dist - 100.0f));
-            currPulse = 3000.0f * range;
-            lightManager.GetComponent<LightManager>().intensity = 1.0f - range;
-            spotlight.intensity = range;
-            pulseInterval = 0.5f;
-            selecting = false;
-        }
-        else
-        {
-            currPulse = 0.0f;
-            pulseInterval = 1.0f;
-            //GetComponent<Renderer>().material.color = Color.black;
-            selecting = false;
-            selected = false;
+            else
+            {
+                //lightManager.GetComponent<LightManager>().intensity = 1.0f;
+                spotlight.intensity = 0.0f;
+                currPulse = 0.0f;
+                pulseInterval = 1.0f;
+                //GetComponent<Renderer>().material.color = Color.black;
+                selecting = false;
+                selected = false;
+            }
         }
 
         if (currPulse > 0.0f) {
@@ -99,6 +113,37 @@ public class ObjectGazeTrigger : MonoBehaviour {
                 SteamVR_Controller.Input(2).TriggerHapticPulse((ushort)currPulse);
                 pulseTimer = 0.0f;
             }
-        }   
+        }
+    }
+
+
+    // TODO: make this work
+    bool CanSeeObjectV2(GameObject obj)
+    {
+        Collider[] colls = obj.GetComponents<Collider>();
+        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(mainCamera);
+
+        // Check if we can see atleast one collider from current object
+        if (colls.Length > 0)
+        {
+            foreach (Collider coll in colls)
+            {
+                if (GeometryUtility.TestPlanesAABB(planes, coll.bounds))
+                    return true;
+            }
+        }
+
+        // If current object has children, do the step above recursively to each child
+        if (obj.transform.childCount > 0)
+        {
+            for (int i = 0; i < obj.transform.childCount; i++)
+            {
+                if (CanSeeObjectV2(obj.transform.GetChild(i).gameObject))
+                    return true;
+            }
+        }
+
+        // Can't see any colliders from current and children objects
+        return false;
     }
 }

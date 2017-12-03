@@ -21,8 +21,8 @@ public class AmbientSoundManager : MonoBehaviour {
     private float interiorVolume = 0.6f;
     private float exteriorVolume = 0.05f;
 
-    private float currAdultInteriorVol = 0.0f;
-    private float currAdultExteriorVol = 0.0f;
+    private float currAdultInteriorVol = 0.6f;
+    private float currAdultExteriorVol = 0.05f;
     private float currChildInteriorVol = 0.0f;
     private float currChildExteriorVol = 0.0f;
     private float currCarehomeInteriorVol = 0.0f;
