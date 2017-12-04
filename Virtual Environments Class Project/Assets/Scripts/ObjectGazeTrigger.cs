@@ -50,7 +50,7 @@ public class ObjectGazeTrigger : MonoBehaviour {
 
         // If the distance is less than the deadspot (close enough to directly looking at the object)
 
-        if (CanSeeObjectV2(gameObject) && distz < 2.0f && roomManager.GetComponent<RoomManager>().roomVisited[roomID])
+        if (CanSeeObjectV2(gameObject) && distz < 2.0f && gameManager.GetComponent<GameManager>().hasRoomBeenVisisted(roomID))
         {
             if (dist < selectionDeadSpot)
             {
@@ -109,6 +109,7 @@ public class ObjectGazeTrigger : MonoBehaviour {
         if (currPulse > 0.0f) {
             pulseTimer += Time.deltaTime;
             if (pulseTimer > pulseInterval) {
+                // TODO: Check that this captures both controllers
                 SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost)).TriggerHapticPulse((ushort)currPulse);
                 SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost)).TriggerHapticPulse((ushort)currPulse);
                 pulseTimer = 0.0f;
