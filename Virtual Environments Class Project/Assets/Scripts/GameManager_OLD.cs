@@ -5,24 +5,16 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 	[SerializeField] bool isVR;
 	[SerializeField] GameObject VRCharacter;
-	[SerializeField] Camera VRCam;
 	[SerializeField] GameObject FPSCharacter;
-	[SerializeField] Camera FPSCam;
 
     public GameObject roomManager;
     public GameObject lightManager;
     public GameObject soundManager;
 
-    public int currentRoom = 0;
-
     void Awake()
 	{
 		VRCharacter.SetActive(isVR);
 		FPSCharacter.SetActive(!isVR);
-
-		if (isVR)
-			RoomManager.playerCam = VRCam;
-		else RoomManager.playerCam = FPSCam;
 	}
 
 	// Use this for initialization
@@ -41,6 +33,7 @@ public class GameManager : MonoBehaviour {
         {
             roomManager.GetComponent<RoomManager>().moveToRoom(roomID);
             roomManager.GetComponent<RoomManager>().roomVisited[roomID] = true;
+            soundManager.GetComponent<AmbientSoundManager>().setRoom(roomID);
         }
     }
 

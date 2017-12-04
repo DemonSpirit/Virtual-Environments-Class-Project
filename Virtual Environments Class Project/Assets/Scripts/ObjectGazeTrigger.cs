@@ -7,6 +7,8 @@ public class ObjectGazeTrigger : MonoBehaviour {
     // Inspector fields
     [SerializeField] int roomID = 0;
     [SerializeField] Camera mainCamera;
+
+    [SerializeField] GameObject gameManager;
     [SerializeField] GameObject roomManager;
     [SerializeField] GameObject lightManager;
     [SerializeField] GameObject ambientManager;
@@ -36,9 +38,9 @@ public class ObjectGazeTrigger : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	void FixedUpdate ()
     {
-        if (roomManager.GetComponent<RoomManager>().currentRoomNumber == roomID) return;
+        if (gameManager.GetComponent<GameManager>().currentRoom == roomID) return;
         // Get the 2D position of the object on the screen.
         Vector3 screenPos = mainCamera.WorldToScreenPoint(transform.position);
         // Get the distance of the object from the center of the screen. 
@@ -47,7 +49,7 @@ public class ObjectGazeTrigger : MonoBehaviour {
         float distz = Vector3.Distance(mainCamera.transform.position, transform.position);
 
         // If the distance is less than the deadspot (close enough to directly looking at the object)
-        Debug.Log(distz);
+
         if (CanSeeObjectV2(gameObject) && distz < 2.0f && roomManager.GetComponent<RoomManager>().roomVisited[roomID])
         {
             if (dist < selectionDeadSpot)
@@ -63,8 +65,7 @@ public class ObjectGazeTrigger : MonoBehaviour {
                 // If the object has been directly looked at for 3 seconds, trigger the timeline change.
                 if (currTriggerTime > totalTriggerTime && !selected)
                 {
-                    Debug.Log("ROOM CHANGE");
-                    roomManager.GetComponent<RoomManager>().moveToRoom(roomID);
+                    gameManager.GetComponent<GameManager>().memoryGoToRoom(roomID);
                     lightManager.GetComponent<LightManager>().intensity = 1.0f;
                     spotlight.intensity = 0.0f;
 
@@ -100,7 +101,6 @@ public class ObjectGazeTrigger : MonoBehaviour {
                 spotlight.intensity = 0.0f;
                 currPulse = 0.0f;
                 pulseInterval = 1.0f;
-                //GetComponent<Renderer>().material.color = Color.black;
                 selecting = false;
                 selected = false;
             }
@@ -109,8 +109,8 @@ public class ObjectGazeTrigger : MonoBehaviour {
         if (currPulse > 0.0f) {
             pulseTimer += Time.deltaTime;
             if (pulseTimer > pulseInterval) {
-                SteamVR_Controller.Input(1).TriggerHapticPulse((ushort)currPulse);
-                SteamVR_Controller.Input(2).TriggerHapticPulse((ushort)currPulse);
+                SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost)).TriggerHapticPulse((ushort)currPulse);
+                SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost)).TriggerHapticPulse((ushort)currPulse);
                 pulseTimer = 0.0f;
             }
         }
