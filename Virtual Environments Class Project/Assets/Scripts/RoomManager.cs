@@ -297,11 +297,11 @@ public class RoomManager : MonoBehaviour
         }
 
 		// Can enable/disable light if wanted
-		/*Light light = obj.GetComponent<Light>();
+		Light light = obj.GetComponent<Light>();
 		if (light != null)
 		{
 			light.enabled = shouldAppear;
-		}*/
+		}
 
         if (obj.transform.childCount == 0)
             return;

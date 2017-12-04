@@ -27,7 +27,7 @@ namespace Valve.VR.InteractionSystem
 		public float catchSpeedThreshold = 0.0f;
 
 		[Tooltip( "When detaching the object, should it return to its original parent?" )]
-		public bool restoreOriginalParent = false;
+		public bool restoreOriginalParent = true;
 
 		public bool attachEaseIn = false;
 		public AnimationCurve snapAttachEaseInCurve = AnimationCurve.EaseInOut( 0.0f, 0.0f, 1.0f, 1.0f );
@@ -50,7 +50,8 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		void Awake()
 		{
-			velocityEstimator = GetComponent<VelocityEstimator>();
+            restoreOriginalParent = true;
+            velocityEstimator = GetComponent<VelocityEstimator>();
 
 			if ( attachEaseIn )
 			{
@@ -236,7 +237,7 @@ namespace Valve.VR.InteractionSystem
 		{
 			yield return new WaitForEndOfFrame();
 
-			hand.DetachObject( gameObject, restoreOriginalParent );
+			hand.DetachObject( gameObject, restoreOriginalParent);
 		}
 
 

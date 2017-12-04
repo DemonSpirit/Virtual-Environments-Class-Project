@@ -25974,6 +25974,14 @@ Prefab:
       propertyPath: masterVolume
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1420414149622282, guid: 0ddf27a8080ee4f4aaaec065d57985d6, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561116263035166, guid: 0ddf27a8080ee4f4aaaec065d57985d6, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ddf27a8080ee4f4aaaec065d57985d6, type: 2}
   m_IsPrefabParent: 0
