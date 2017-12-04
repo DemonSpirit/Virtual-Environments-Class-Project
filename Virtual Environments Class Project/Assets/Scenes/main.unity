@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731753, g: 0.13414776, b: 0.121078834, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5236,6 +5236,16 @@ Prefab:
       propertyPath: lightManager
       value: 
       objectReference: {fileID: 1602202422}
+    - target: {fileID: 114837920063074480, guid: e3dd1271d8c264e4a96711654945b8d1,
+        type: 2}
+      propertyPath: FPSCam
+      value: 
+      objectReference: {fileID: 374154033}
+    - target: {fileID: 114837920063074480, guid: e3dd1271d8c264e4a96711654945b8d1,
+        type: 2}
+      propertyPath: VRCam
+      value: 
+      objectReference: {fileID: 360980469}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3dd1271d8c264e4a96711654945b8d1, type: 2}
   m_IsPrefabParent: 0
@@ -5886,6 +5896,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4895519822546616, guid: 71778dbf5a426c7438825574481f8b6a,
     type: 2}
   m_PrefabInternal: {fileID: 370411058}
+--- !u!20 &374154033 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 2}
+  m_PrefabInternal: {fileID: 234906246}
 --- !u!1 &387568912
 GameObject:
   m_ObjectHideFlags: 0
@@ -10379,7 +10394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0119f9d373e34e4b887bf46a9f681f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCam: {fileID: 360980469}
   roomOrigins:
   - {fileID: 532319338}
   - {fileID: 1997451712}

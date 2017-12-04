@@ -5,7 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 	[SerializeField] bool isVR;
 	[SerializeField] GameObject VRCharacter;
+	[SerializeField] Camera VRCam;
 	[SerializeField] GameObject FPSCharacter;
+	[SerializeField] Camera FPSCam;
 
     public GameObject roomManager;
     public GameObject lightManager;
@@ -17,6 +19,10 @@ public class GameManager : MonoBehaviour {
 	{
 		VRCharacter.SetActive(isVR);
 		FPSCharacter.SetActive(!isVR);
+
+		if (isVR)
+			RoomManager.playerCam = VRCam;
+		else RoomManager.playerCam = FPSCam;
 	}
 
 	// Use this for initialization

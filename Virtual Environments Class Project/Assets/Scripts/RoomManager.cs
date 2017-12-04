@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour
 {
-    public Camera playerCam;
+    public static Camera playerCam;
 
     bool prevLeftTrigger = false;
     bool prevRightTrigger = false;
@@ -286,15 +286,22 @@ public class RoomManager : MonoBehaviour
         // Rigidbody should be either kinematic or not
         Rigidbody rb = obj.GetComponent<Rigidbody>();
         if (rb != null)
-            obj.GetComponent<Rigidbody>().isKinematic = !shouldAppear;
+            rb.isKinematic = !shouldAppear;
 
 
         // Renderer should be either enabled or not
         Renderer rend = obj.GetComponent<Renderer>();
         if (rend != null)
         {
-            obj.GetComponent<Renderer>().enabled = shouldAppear;
+           rend.enabled = shouldAppear;
         }
+
+		// Can enable/disable light if wanted
+		/*Light light = obj.GetComponent<Light>();
+		if (light != null)
+		{
+			light.enabled = shouldAppear;
+		}*/
 
         if (obj.transform.childCount == 0)
             return;
