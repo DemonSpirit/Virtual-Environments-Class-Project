@@ -82,6 +82,8 @@ GameObject:
   - component: {fileID: 114179593058519098}
   - component: {fileID: 114861102899206514}
   - component: {fileID: 114183070165877984}
+  - component: {fileID: 65183561504437246}
+  - component: {fileID: 136411353522552798}
   m_Layer: 0
   m_Name: glass cup
   m_TagString: Untagged
@@ -1218,6 +1220,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65183561504437246
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1196717888051730}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.92687696, y: 0.90990746, z: 1.8694245}
+  m_Center: {x: 0.034800738, y: 0.017997349, z: -0.00000044821763}
 --- !u!65 &65200565673412568
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1528,7 +1542,7 @@ MonoBehaviour:
   attachmentFlags: 12
   attachmentPoint: 
   catchSpeedThreshold: 0
-  restoreOriginalParent: 0
+  restoreOriginalParent: 1
   attachEaseIn: 0
   snapAttachEaseInCurve:
     serializedVersion: 2
@@ -1968,6 +1982,19 @@ CapsuleCollider:
   m_Height: 2.1112878
   m_Direction: 2
   m_Center: {x: 0, y: 1.0729456e-14, z: -1.4586862}
+--- !u!136 &136411353522552798
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1196717888051730}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.7682497
+  m_Height: 1.6805929
+  m_Direction: 2
+  m_Center: {x: 0.059006505, y: -0.10745748, z: -0.018486466}
 --- !u!136 &136534895141605588
 CapsuleCollider:
   m_ObjectHideFlags: 1
