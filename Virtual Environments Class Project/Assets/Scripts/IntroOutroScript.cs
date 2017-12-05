@@ -74,11 +74,14 @@ public class IntroOutroScript : MonoBehaviour
         {
             outroTimer += Time.deltaTime;
 
-            float dissolveVal = 1.0f - (1.0f / 9.0f * outroTimer);
-            GetComponent<Renderer>().material.SetFloat("_DisVal", dissolveVal);
-            if (outroTimer > 9.0f)
+            if (outroTimer > 10.0)
             {
-                outroPlaying = false;
+                float dissolveVal = 1.0f - (1.0f / 5.0f * (outroTimer - 10.0f));
+                GetComponent<Renderer>().material.SetFloat("_DisVal", dissolveVal);
+                if (outroTimer > 15.0f)
+                {
+                    outroPlaying = false;
+                }
             }
         }
     }

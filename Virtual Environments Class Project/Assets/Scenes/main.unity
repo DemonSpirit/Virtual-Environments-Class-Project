@@ -20444,7 +20444,7 @@ Prefab:
     - target: {fileID: 54885610092887924, guid: 18167971b0cb8334e912fe07003d77fc,
         type: 2}
       propertyPath: m_IsKinematic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4282197886318886, guid: 18167971b0cb8334e912fe07003d77fc, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
