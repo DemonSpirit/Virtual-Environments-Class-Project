@@ -1,4 +1,4 @@
-﻿Shader "Skybox/Blended" {
+﻿Shader "NFN/Skybox/Blended" {
 	Properties{
 		_Tint("Tint Color", Color) = (.5, .5, .5, .5)
 		_Blend("Blend", Range(0.0,1.0)) = 0.5

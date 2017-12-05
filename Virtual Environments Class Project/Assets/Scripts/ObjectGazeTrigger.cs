@@ -60,6 +60,9 @@ public class ObjectGazeTrigger : MonoBehaviour {
                 if (!selecting)
                 {
                     currTriggerTime = 0.0f;
+                    // TODO: Check that this captures both controllers
+                    SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost)).TriggerHapticPulse(1000);
+                    SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost)).TriggerHapticPulse(1000);
 
                 }
                 // If the object has been directly looked at for 3 seconds, trigger the timeline change.
@@ -99,20 +102,8 @@ public class ObjectGazeTrigger : MonoBehaviour {
             {
                 //lightManager.GetComponent<LightManager>().intensity = 1.0f;
                 spotlight.intensity = 0.0f;
-                currPulse = 0.0f;
-                pulseInterval = 1.0f;
                 selecting = false;
                 selected = false;
-            }
-        }
-
-        if (currPulse > 0.0f) {
-            pulseTimer += Time.deltaTime;
-            if (pulseTimer > pulseInterval) {
-                // TODO: Check that this captures both controllers
-                SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost)).TriggerHapticPulse((ushort)currPulse);
-                SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost)).TriggerHapticPulse((ushort)currPulse);
-                pulseTimer = 0.0f;
             }
         }
     }

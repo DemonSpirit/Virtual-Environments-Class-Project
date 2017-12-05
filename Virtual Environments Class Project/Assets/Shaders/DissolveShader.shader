@@ -1,4 +1,4 @@
-﻿Shader "Custom/Dissolve3D"
+﻿Shader "NFN/Dissolve3D"
 {
 	Properties
 	{

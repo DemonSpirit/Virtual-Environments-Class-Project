@@ -2,9 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IntroOutroScript : MonoBehaviour {
+public class IntroOutroScript : MonoBehaviour
+{
 
     public AudioClip introClip;
+    public AudioClip outroClip;
+    public AudioClip childClip;
+    public AudioClip adultClip;
+    public AudioClip oldClip;
+
+    bool childClipPlayed = false;
+    bool adultClipPlayed = false;
+    bool oldClipPlayed = false;
 
     bool introStarted = false;
     bool introPlaying = false;
@@ -20,15 +29,16 @@ public class IntroOutroScript : MonoBehaviour {
     public Texture2D outroTexture;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         GetComponent<Renderer>().material.SetTexture("_MainTex", introTexture);
-	}
+    }
 
     // Update is called once per frame
     void Update()
     {
         if (!introStarted)
-        { 
+        {
 
             leftTrigger = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost)).GetHairTriggerDown();
             rightTrigger = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost)).GetHairTriggerDown();
@@ -73,7 +83,7 @@ public class IntroOutroScript : MonoBehaviour {
         }
     }
 
-    void  playIntro()
+    void playIntro()
     {
         introStarted = true;
         introPlaying = true;
@@ -83,9 +93,31 @@ public class IntroOutroScript : MonoBehaviour {
 
     public void playOutro()
     {
+        playOldSound();
         GetComponent<MeshRenderer>().enabled = true;
         GetComponent<Renderer>().material.SetTexture("_MainTex", outroTexture);
         outroTimer = 0.0f;
         outroPlaying = true;
+    }
+
+    public void playChildSound()
+    {
+        if (childClipPlayed) return;
+        childClipPlayed = true;
+        GetComponent<AudioSource>().PlayOneShot(childClip);
+    }
+
+    public void playAdultSound()
+    {
+        if (adultClipPlayed) return;
+        adultClipPlayed = true;
+        GetComponent<AudioSource>().PlayOneShot(adultClip);
+    }
+
+    public void playOldSound()
+    {
+        if (oldClipPlayed) return;
+        oldClipPlayed = true;
+        GetComponent<AudioSource>().PlayOneShot(oldClip);
     }
 }
