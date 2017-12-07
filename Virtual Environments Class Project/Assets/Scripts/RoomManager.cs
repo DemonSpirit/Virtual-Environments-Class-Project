@@ -15,6 +15,21 @@ public class RoomManager : MonoBehaviour
 
     [SerializeField] List<Transform> roomOrigins;
     [SerializeField] List<Transform> objectFolders;
+
+    [SerializeField] Material childWallpaper;
+    [SerializeField] Material adultWallpaper;
+    [SerializeField] Material carehomeWallpaper;
+
+    private Material currentWallpaper;
+    private bool allWallPapersChanged = true;
+
+    [SerializeField] GameObject NWall;
+    [SerializeField] GameObject EWall;
+    [SerializeField] GameObject SWall;
+    [SerializeField] GameObject WWall;
+
+    WallpaperWall[] walls = new WallpaperWall[4];
+
     List<GameObject> objectsToDisappear;
 
 
@@ -52,6 +67,18 @@ public class RoomManager : MonoBehaviour
 
             PositionObjectFolder(i, 0);
         }
+
+        walls[0] = new WallpaperWall();
+        walls[0].wall = NWall;
+
+        walls[1] = new WallpaperWall();
+        walls[1].wall = EWall;
+
+        walls[2] = new WallpaperWall();
+        walls[2].wall = SWall;
+
+        walls[3] = new WallpaperWall();
+        walls[3].wall = WWall;
     }
 
     void Update()
@@ -70,20 +97,69 @@ public class RoomManager : MonoBehaviour
             EmptyingRoom();
             FillingRoom(currentRoomNumber);
         }
+        checkWallpaper();
 
+    }
+
+    void checkWallpaper()
+    {
+        if (!allWallPapersChanged)
+        {
+            int changeCount = 0;
+            for (int i = 0; i < 4; i++)
+            {
+                if (walls[i].currentRoomID != currentRoomNumber)
+                {
+                    if (!CanSeeCollider(walls[i].wall.GetComponent<Collider>()))
+                    {
+                        Renderer[] renderers = walls[i].wall.GetComponentsInChildren<Renderer>();
+                        for (int j = 0; j < renderers.Length; j++)
+                        {
+                            Debug.Log(renderers[j].material + " " + currentWallpaper);
+                            renderers[j].material = currentWallpaper;
+                            Debug.Log(renderers[j].material + " " + currentWallpaper);
+                        }
+                        walls[i].currentRoomID = currentRoomNumber;
+                    }
+                } else
+                {
+                    changeCount++;
+                }
+            }
+            if (changeCount == 4) allWallPapersChanged = true;
+        }
+    }
+
+    Material getCurrentWallpaper(int roomID)
+    {
+        switch(roomID)
+        {
+            case 0:
+                return childWallpaper;
+                break;
+            case 1:
+                return adultWallpaper;
+                break;
+            case 2:
+                return carehomeWallpaper;
+                break;
+        }
+        return null;
     }
 
     public void moveToNextRoom()
     {
         int nextRoom = (currentRoomNumber + 1) % roomOrigins.Count;
-        ChangeRoomState(nextRoom);
-        shouldEmptyRoom = true;
+        moveToRoom(nextRoom);
     }
 
     public void moveToRoom(int roomID)
     {
+        currentWallpaper = getCurrentWallpaper(roomID);
         ChangeRoomState(roomID);
         shouldEmptyRoom = true;
+        allWallPapersChanged = false;
+
     }
 
     // Makes sure certain new objects are not directly visible
@@ -270,6 +346,13 @@ public class RoomManager : MonoBehaviour
         return false;
     }
 
+    bool CanSeeCollider(Collider col)
+    {
+        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(playerCam);
+
+        return (GeometryUtility.TestPlanesAABB(planes, col.bounds));
+    }
+
     void ObjectAppearV2(GameObject obj, bool shouldAppear, bool force = false)
     {
         if (!shouldAppear && obj.tag == "Unremovable" && !force) return;
@@ -341,4 +424,10 @@ public class RoomManager : MonoBehaviour
             return rend.enabled;
         }
     }
+}
+
+public class WallpaperWall
+{
+    public int currentRoomID = 0;
+    public GameObject wall;
 }
