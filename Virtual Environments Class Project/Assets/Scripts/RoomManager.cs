@@ -136,13 +136,10 @@ public class RoomManager : MonoBehaviour
         {
             case 0:
                 return childWallpaper;
-                break;
             case 1:
                 return adultWallpaper;
-                break;
             case 2:
                 return carehomeWallpaper;
-                break;
         }
         return null;
     }
