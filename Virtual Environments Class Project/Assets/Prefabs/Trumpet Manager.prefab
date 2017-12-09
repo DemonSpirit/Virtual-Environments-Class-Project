@@ -51,3 +51,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde28c365062d49a5831eeebf476c227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combTrump1x2: {fileID: 1760871890753570, guid: 1171bb3d4389e4ec384b0493aa327bc0,
+    type: 2}
+  combTrump1x3: {fileID: 1780972946823924, guid: adf91cdbb445e425380cab748e760430,
+    type: 2}
+  combTrump2x3: {fileID: 1893091343112766, guid: 5043c01e96ffc4539a5a1f502bd22e3d,
+    type: 2}
+  combTrumpComplete: {fileID: 1356539557455132, guid: a8648bf5c2d1548afacd87e3cb44d189,
+    type: 2}
+  isInstantiating: 0

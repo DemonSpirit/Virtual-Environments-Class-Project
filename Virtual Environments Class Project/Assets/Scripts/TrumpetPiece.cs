@@ -3,54 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TrumpetPiece : MonoBehaviour {
-	AudioSource audioSource;
-	[SerializeField] AudioClip audioClip;
-	[SerializeField] GameObject combinedObject;
+	/*AudioSource audioSource;
+	[SerializeField] AudioClip audioClip;*/
+	[SerializeField] public int id;
 
 
 	// Use this for initialization
 	void Start () {
-		if (audioSource == null)
+		/*if (audioSource == null)
 			audioSource = gameObject.AddComponent<AudioSource>() as AudioSource;
-		else audioSource = GetComponent<AudioSource>();
+		else audioSource = GetComponent<AudioSource>();*/
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-	void CombineObjects(Transform other)
-	{
-		if (TrumpetManager.isCombiningPieces)
-			return;
-
-		/*if (audioClip != null)
-		{
-			audioSource.PlayOneShot(audioClip);
-		}*/
-
-		TrumpetManager.isCombiningPieces = true;
-
-
-		GameObject combinedObj = Instantiate(combinedObject, other.position, other.rotation) as GameObject;
-		combinedObj.GetComponent<AudioSource>().PlayOneShot(audioClip);
-		Destroy(other.gameObject);
-		Destroy(gameObject);
-
-	}
 
 	void OnCollisionEnter(Collision col)
 	{
-		if (col.transform.tag == "TrumpetPiece")
+		if (col.transform.tag == "TrumpetPiece" && !TrumpetManager.singleton.isInstantiating)
 		{
-			CombineObjects(col.transform);
+			TrumpetManager.singleton.isInstantiating = true;
+			TrumpetManager.singleton.InstantiateCombinedObject(gameObject, col.gameObject, col.transform.position);
 		}
 	}
+		
 
 	void OnDestroy()
 	{
-		TrumpetManager.isCombiningPieces = false;
-		print(TrumpetManager.isCombiningPieces);
+		TrumpetManager.singleton.isInstantiating = false;
 	}
 }
