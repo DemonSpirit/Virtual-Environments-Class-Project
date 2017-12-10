@@ -6,19 +6,41 @@ public class Handscript : MonoBehaviour {
 
     public GameObject leftHand;
     public GameObject rightHand;
+
+    int leftHandIndex;
+    int rightHandIndex;
+
     public GameObject leftHandModel;
     public GameObject rightHandModel;
+
+    public bool leftHandTriggerDown = false;
+    public bool rightHandTriggerDown = false;
+    bool prevLeftTrigger = false;
+    bool prevRightTrigger = false;
+
+    [HideInInspector] public static Handscript singleton;
 
     // Use this for initialization
     void Start () {
 
-	}
+        if (singleton == null)
+            singleton = this;
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        leftHandModel.GetComponent<Animator>().SetBool("isGrabbing", SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost)).GetHairTrigger());
-        rightHandModel.GetComponent<Animator>().SetBool("isGrabbing", SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost)).GetHairTrigger());
+        leftHandIndex = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost);
+        rightHandIndex = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost);
+
+        bool currLeftTrigger = SteamVR_Controller.Input(leftHandIndex).GetHairTrigger();
+        bool currRightTrigger = SteamVR_Controller.Input(rightHandIndex).GetHairTrigger();
+
+        leftHandTriggerDown = (currLeftTrigger && !prevLeftTrigger);
+        rightHandTriggerDown = (currRightTrigger && !prevRightTrigger);
+
+        leftHandModel.GetComponent<Animator>().SetBool("isGrabbing", SteamVR_Controller.Input(leftHandIndex).GetHairTrigger());
+        rightHandModel.GetComponent<Animator>().SetBool("isGrabbing", SteamVR_Controller.Input(rightHandIndex).GetHairTrigger());
 
         GameObject leftHeldObject = leftHand.GetComponent<Valve.VR.InteractionSystem.Hand>().currentAttachedObject;
         GameObject rightHeldObject = rightHand.GetComponent<Valve.VR.InteractionSystem.Hand>().currentAttachedObject;
@@ -33,5 +55,8 @@ public class Handscript : MonoBehaviour {
                 }
             }
         }
+
+        prevLeftTrigger = currLeftTrigger;
+        prevRightTrigger = currRightTrigger;
     }
 }
