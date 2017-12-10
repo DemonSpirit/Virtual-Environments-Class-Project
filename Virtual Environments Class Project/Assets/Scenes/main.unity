@@ -7470,6 +7470,53 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 1.0000001, z: 6.123234e-17}
   m_Center: {x: 0, y: 0.00000047683716, z: -0.00000047683716}
+--- !u!1001 &435939079
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 687810296}
+    m_Modifications:
+    - target: {fileID: 4154798488449484, guid: a37fe070fe3693f429a1b6b1cfd48b8a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.6079998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154798488449484, guid: a37fe070fe3693f429a1b6b1cfd48b8a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.02599907
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154798488449484, guid: a37fe070fe3693f429a1b6b1cfd48b8a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.20700073
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154798488449484, guid: a37fe070fe3693f429a1b6b1cfd48b8a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154798488449484, guid: a37fe070fe3693f429a1b6b1cfd48b8a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.97443986
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154798488449484, guid: a37fe070fe3693f429a1b6b1cfd48b8a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154798488449484, guid: a37fe070fe3693f429a1b6b1cfd48b8a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.22464877
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154798488449484, guid: a37fe070fe3693f429a1b6b1cfd48b8a, type: 2}
+      propertyPath: m_RootOrder
+      value: 50
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a37fe070fe3693f429a1b6b1cfd48b8a, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &435939080 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4154798488449484, guid: a37fe070fe3693f429a1b6b1cfd48b8a,
+    type: 2}
+  m_PrefabInternal: {fileID: 435939079}
 --- !u!1001 &436090580
 Prefab:
   m_ObjectHideFlags: 0
@@ -11920,6 +11967,7 @@ Transform:
   - {fileID: 1047607425}
   - {fileID: 964275470}
   - {fileID: 744187982}
+  - {fileID: 435939080}
   m_Father: {fileID: 2912528}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
