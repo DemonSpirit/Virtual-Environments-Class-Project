@@ -2484,7 +2484,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4504718508595492, guid: 51cce0c9dc774e240856bed649bcef0f, type: 2}
       propertyPath: m_RootOrder
-      value: 52
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 51cce0c9dc774e240856bed649bcef0f, type: 2}
@@ -7555,7 +7555,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4880970990044066, guid: e765dfe38bf9eac4c81703ca5386d447, type: 2}
       propertyPath: m_RootOrder
-      value: 51
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 4880970990044066, guid: e765dfe38bf9eac4c81703ca5386d447, type: 2}
       propertyPath: m_LocalScale.x
@@ -7614,7 +7614,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4154798488449484, guid: a37fe070fe3693f429a1b6b1cfd48b8a, type: 2}
       propertyPath: m_RootOrder
-      value: 50
+      value: 51
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a37fe070fe3693f429a1b6b1cfd48b8a, type: 2}
@@ -12121,9 +12121,9 @@ Transform:
   - {fileID: 1047607425}
   - {fileID: 964275470}
   - {fileID: 744187982}
+  - {fileID: 161533769}
   - {fileID: 435939080}
   - {fileID: 430573876}
-  - {fileID: 161533769}
   m_Father: {fileID: 2912528}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13217,6 +13217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftHand: {fileID: 1607568988}
   rightHand: {fileID: 530161168}
+  leftHandModel: {fileID: 0}
+  rightHandModel: {fileID: 0}
 --- !u!1001 &756883050
 Prefab:
   m_ObjectHideFlags: 0
