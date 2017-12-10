@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: dfd179408722ab645859c4dca0540118
+timeCreated: 1512905381
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Arc001
+    100002: //RootNode
+    100004: Line001
+    100006: Line002
+    100008: Line003
+    100010: Line004
+    100012: Line005
+    100014: Line006
+    100016: Line007
+    100018: Line008
+    100020: Line009
+    100022: Line010
+    100024: Line011
+    100026: Line012
+    100028: Line013
+    100030: Line014
+    100032: Line015
+    100034: Plane001
+    100036: Sphere001
+    100038: Sphere002
+    100040: VRayCam001
+    100042: VRayCam001.Target
+    100044: VRaySun001
+    100046: VRaySun001.Target
+    400000: Arc001
+    400002: //RootNode
+    400004: Line001
+    400006: Line002
+    400008: Line003
+    400010: Line004
+    400012: Line005
+    400014: Line006
+    400016: Line007
+    400018: Line008
+    400020: Line009
+    400022: Line010
+    400024: Line011
+    400026: Line012
+    400028: Line013
+    400030: Line014
+    400032: Line015
+    400034: Plane001
+    400036: Sphere001
+    400038: Sphere002
+    400040: VRayCam001
+    400042: VRayCam001.Target
+    400044: VRaySun001
+    400046: VRaySun001.Target
+    2300000: Arc001
+    2300002: Line001
+    2300004: Line002
+    2300006: Line003
+    2300008: Line004
+    2300010: Line005
+    2300012: Line006
+    2300014: Line007
+    2300016: Line008
+    2300018: Line009
+    2300020: Line010
+    2300022: Line011
+    2300024: Line015
+    2300026: Plane001
+    2300028: Sphere001
+    2300030: Sphere002
+    3300000: Arc001
+    3300002: Line001
+    3300004: Line002
+    3300006: Line003
+    3300008: Line004
+    3300010: Line005
+    3300012: Line006
+    3300014: Line007
+    3300016: Line008
+    3300018: Line009
+    3300020: Line010
+    3300022: Line011
+    3300024: Line015
+    3300026: Plane001
+    3300028: Sphere001
+    3300030: Sphere002
+    4300000: Plane001
+    4300002: Line001
+    4300004: Line002
+    4300006: Line003
+    4300008: Line004
+    4300010: Line005
+    4300012: Line006
+    4300014: Line007
+    4300016: Line008
+    4300018: Line009
+    4300020: Line010
+    4300022: Line011
+    4300024: Arc001
+    4300026: Sphere001
+    4300028: Sphere002
+    4300030: Line015
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 4672ea01d45585640bf1c61564bd9318, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_and_Scratched_Metal_painted
+    second: {fileID: 2100000, guid: 92a6d2b8a6367ea46b0d3d0d93c22f10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic White Glossy
+    second: {fileID: 2100000, guid: 80956418a28872a4d8c74a5f25ae19bb, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: feb6fd40fa1ccb045af1b80332029c40
+timeCreated: 1512905385
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: d02_001
+    100004: d02_002
+    100006: d02_003
+    100008: d02_004
+    100010: d04#1_001
+    100012: d04#1_002
+    100014: d04_001
+    100016: d04_003
+    100018: d05_001
+    100020: d05_002
+    100022: d05_003
+    100024: d05_004
+    100026: dd01_001
+    100028: dd01_002
+    100030: frame_001
+    100032: weel_chair_001
+    400000: //RootNode
+    400002: d02_001
+    400004: d02_002
+    400006: d02_003
+    400008: d02_004
+    400010: d04#1_001
+    400012: d04#1_002
+    400014: d04_001
+    400016: d04_003
+    400018: d05_001
+    400020: d05_002
+    400022: d05_003
+    400024: d05_004
+    400026: dd01_001
+    400028: dd01_002
+    400030: frame_001
+    400032: weel_chair_001
+    2300000: d02_001
+    2300002: d02_002
+    2300004: d02_003
+    2300006: d02_004
+    2300008: d04#1_001
+    2300010: d04#1_002
+    2300012: d04_001
+    2300014: d04_003
+    2300016: d05_001
+    2300018: d05_002
+    2300020: d05_003
+    2300022: d05_004
+    2300024: dd01_001
+    2300026: dd01_002
+    2300028: frame_001
+    2300030: weel_chair_001
+    3300000: d02_001
+    3300002: d02_002
+    3300004: d02_003
+    3300006: d02_004
+    3300008: d04#1_001
+    3300010: d04#1_002
+    3300012: d04_001
+    3300014: d04_003
+    3300016: d05_001
+    3300018: d05_002
+    3300020: d05_003
+    3300022: d05_004
+    3300024: dd01_001
+    3300026: dd01_002
+    3300028: frame_001
+    3300030: weel_chair_001
+    4300000: d02_004
+    4300002: d04_003
+    4300004: d05_004
+    4300006: dd01_002
+    4300008: d05_003
+    4300010: d05_002
+    4300012: dd01_001
+    4300014: d04#1_002
+    4300016: d04#1_001
+    4300018: d02_003
+    4300020: d04_001
+    4300022: d05_001
+    4300024: d02_002
+    4300026: d02_001
+    4300028: frame_001
+    4300030: weel_chair_001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skp_front_default
+    second: {fileID: 2100000, guid: 1cf45519f5091c7408dc4a296e336ad9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
