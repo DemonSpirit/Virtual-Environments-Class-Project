@@ -40,6 +40,8 @@ GameObject:
   - component: {fileID: 114699017416334564}
   - component: {fileID: 114439916050452008}
   - component: {fileID: 114646307038881104}
+  - component: {fileID: 65482651686786680}
+  - component: {fileID: 136634522278247606}
   m_Layer: 0
   m_Name: lamp desk
   m_TagString: Untagged
@@ -279,7 +281,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1335694073539072}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.993, y: 0.89654636, z: 0.06566755}
+  m_LocalPosition: {x: 1.1749995, y: 0.51766574, z: -0.4636413}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4868540449088818}
@@ -518,8 +520,20 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.2969535, y: 0.31039244, z: 0.49224663}
-  m_Center: {x: 0, y: 0, z: 0.25387675}
+  m_Size: {x: 0.333987, y: 0.31039244, z: 0.0915263}
+  m_Center: {x: -0.002053976, y: 1.2011303e-16, z: 0.039702196}
+--- !u!65 &65482651686786680
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335694073539072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.119415164, y: 0.14009942, z: 0.4847595}
+  m_Center: {x: -0.0026651025, y: 0.00043720752, z: 0.30426326}
 --- !u!95 &95440618516659102
 Animator:
   serializedVersion: 3
@@ -645,3 +659,16 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   snapAttachEaseInCompleted: 0
+--- !u!136 &136634522278247606
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335694073539072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.17789032
+  m_Height: 0.4146122
+  m_Direction: 2
+  m_Center: {x: 0.0033400655, y: 1.4065101e-15, z: 0.3489743}
