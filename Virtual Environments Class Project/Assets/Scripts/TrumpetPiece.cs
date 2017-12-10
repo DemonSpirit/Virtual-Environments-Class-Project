@@ -7,21 +7,25 @@ public class TrumpetPiece : MonoBehaviour {
 	[SerializeField] AudioClip audioClip;*/
 	[SerializeField] public int id;
 
-
 	// Use this for initialization
 	void Start () {
-		/*if (audioSource == null)
+        /*if (audioSource == null)
 			audioSource = gameObject.AddComponent<AudioSource>() as AudioSource;
 		else audioSource = GetComponent<AudioSource>();*/
 	}
-	
+
+    void FixedUpdate()
+    {
+        
+    }
 
 	void OnCollisionEnter(Collision col)
 	{
 		if (col.transform.tag == "TrumpetPiece" && !TrumpetManager.singleton.isInstantiating)
 		{
+            Debug.Log("JOIN TRUMPETS");
 			TrumpetManager.singleton.isInstantiating = true;
-			TrumpetManager.singleton.InstantiateCombinedObject(gameObject, col.gameObject, col.transform.position);
+			TrumpetManager.singleton.InstantiateCombinedObject(gameObject, col.gameObject);
 		}
 	}
 		

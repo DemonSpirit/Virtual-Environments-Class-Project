@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114901488330110818}
   - component: {fileID: 114915730015213748}
   - component: {fileID: 114542804303922000}
+  - component: {fileID: 114147468857159378}
   m_Layer: 0
   m_Name: Trumpet2x3
   m_TagString: TrumpetPiece
@@ -115,6 +116,53 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.48563898, y: 0.060082994, z: 0.15423101}
   m_Center: {x: 0.1589385, y: 0.0452565, z: 0.0138725005}
+--- !u!114 &114147468857159378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1893091343112766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachmentFlags: 12
+  attachmentPoint: 
+  catchSpeedThreshold: 0
+  restoreOriginalParent: 1
+  attachEaseIn: 0
+  snapAttachEaseInCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  snapAttachEaseInTime: 0.15
+  attachEaseInAttachmentNames: []
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onDetachFromHand:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  snapAttachEaseInCompleted: 0
 --- !u!114 &114542804303922000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,7 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91d7cf35b982545db90e9864afbef939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 0}
   id: 23
 --- !u!114 &114901488330110818
 MonoBehaviour:

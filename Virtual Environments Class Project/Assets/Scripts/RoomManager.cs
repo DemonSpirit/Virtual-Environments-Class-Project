@@ -115,9 +115,7 @@ public class RoomManager : MonoBehaviour
                         Renderer[] renderers = walls[i].wall.GetComponentsInChildren<Renderer>();
                         for (int j = 0; j < renderers.Length; j++)
                         {
-                            Debug.Log(renderers[j].material + " " + currentWallpaper);
                             renderers[j].material = currentWallpaper;
-                            Debug.Log(renderers[j].material + " " + currentWallpaper);
                         }
                         walls[i].currentRoomID = currentRoomNumber;
                     }
@@ -290,18 +288,20 @@ public class RoomManager : MonoBehaviour
     void ObjectAppear(GameObject obj, bool shouldAppear)
     {
 
+        if (obj.tag != "Ignore")
+        {
+            Renderer rend = obj.GetComponent<Renderer>();
+            if (rend != null)
+                obj.GetComponent<Renderer>().enabled = shouldAppear;
 
-        Renderer rend = obj.GetComponent<Renderer>();
-        if (rend != null)
-            obj.GetComponent<Renderer>().enabled = shouldAppear;
+            Collider coll = obj.GetComponent<Collider>();
+            if (coll != null)
+                obj.GetComponent<Collider>().isTrigger = !shouldAppear;
 
-        Collider coll = obj.GetComponent<Collider>();
-        if (coll != null)
-            obj.GetComponent<Collider>().isTrigger = !shouldAppear;
-
-        Rigidbody rb = obj.GetComponent<Rigidbody>();
-        if (rb != null)
-            obj.GetComponent<Rigidbody>().isKinematic = !shouldAppear;
+            Rigidbody rb = obj.GetComponent<Rigidbody>();
+            if (rb != null)
+                obj.GetComponent<Rigidbody>().isKinematic = !shouldAppear;
+        }
 
 
 
@@ -352,28 +352,31 @@ public class RoomManager : MonoBehaviour
 
     void ObjectAppearV2(GameObject obj, bool shouldAppear, bool force = false)
     {
-        if (!shouldAppear && obj.tag == "Unremovable" && !force) return;
+        if (!shouldAppear && (obj.tag == "Unremovable" || obj.tag == "TrumpetPiece") && !force) return;
         // All colliders should be either trigger or not
-        Collider[] colls = obj.GetComponents<Collider>();
-        if (colls.Length > 0)
+        if (obj.tag != "Ignore" && obj.tag != "TrumpetTrigger")
         {
-            foreach (Collider coll in colls)
+            Collider[] colls = obj.GetComponents<Collider>();
+            if (colls.Length > 0)
             {
-                coll.isTrigger = !shouldAppear;
+                foreach (Collider coll in colls)
+                {
+                    coll.isTrigger = !shouldAppear;
+                }
             }
-        }
 
-        // Rigidbody should be either kinematic or not
-        Rigidbody rb = obj.GetComponent<Rigidbody>();
-        if (rb != null)
-            rb.isKinematic = !shouldAppear;
+            // Rigidbody should be either kinematic or not
+            Rigidbody rb = obj.GetComponent<Rigidbody>();
+            if (rb != null)
+                rb.isKinematic = !shouldAppear;
 
 
-        // Renderer should be either enabled or not
-        Renderer rend = obj.GetComponent<Renderer>();
-        if (rend != null)
-        {
-           rend.enabled = shouldAppear;
+            // Renderer should be either enabled or not
+            Renderer rend = obj.GetComponent<Renderer>();
+            if (rend != null)
+            {
+                rend.enabled = shouldAppear;
+            }
         }
 
 		// Can enable/disable light if wanted

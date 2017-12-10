@@ -16,11 +16,11 @@ public class Pickupable : MonoBehaviour {
 
 	void OnMouseOver()
 	{
-		GetComponent<Renderer>().material.shader = Shader.Find("Self-Illumin/Outlined Diffuse");
+		//GetComponent<Renderer>().material.shader = Shader.Find("Self-Illumin/Outlined Diffuse");
 	}
 
 	void OnMouseExit()
 	{
-		GetComponent<Renderer>().material.shader = Shader.Find("Diffuse");
+		//GetComponent<Renderer>().material.shader = Shader.Find("Diffuse");
 	}
 }

@@ -7,6 +7,8 @@ TagManager:
   - ObjectSpotlight
   - TrumpetPiece
   - Unremovable
+  - Ignore
+  - TrumpetTrigger
   layers:
   - Default
   - TransparentFX

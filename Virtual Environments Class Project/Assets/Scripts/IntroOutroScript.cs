@@ -18,6 +18,7 @@ public class IntroOutroScript : MonoBehaviour
     bool introStarted = false;
     bool introPlaying = false;
     bool outroPlaying = false;
+    bool experienceFinished = false;
     float introTimer = 0.0f;
     float outroTimer = 0.0f;
     bool leftTrigger = false;
@@ -81,8 +82,27 @@ public class IntroOutroScript : MonoBehaviour
                 if (outroTimer > 15.0f)
                 {
                     outroPlaying = false;
+                    experienceFinished = true;
                 }
             }
+        }
+
+        if (experienceFinished == true)
+        {
+            leftTrigger = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost)).GetHairTriggerDown();
+            rightTrigger = SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost)).GetHairTriggerDown();
+
+            if (leftTrigger && leftTrigger != leftPrevTrigger)
+            {
+                goToPlaymode();
+            }
+            else if (rightTrigger && rightTrigger != rightPrevTrigger)
+            {
+                goToPlaymode();
+            }
+
+            leftPrevTrigger = leftTrigger;
+            rightPrevTrigger = rightTrigger;
         }
     }
 
@@ -101,6 +121,13 @@ public class IntroOutroScript : MonoBehaviour
         GetComponent<Renderer>().material.SetTexture("_MainTex", outroTexture);
         outroTimer = 0.0f;
         outroPlaying = true;
+    }
+
+    public void goToPlaymode()
+    {
+        introStarted = true;
+        introPlaying = true;
+        introTimer = 0.0f;
     }
 
     public void playChildSound()
