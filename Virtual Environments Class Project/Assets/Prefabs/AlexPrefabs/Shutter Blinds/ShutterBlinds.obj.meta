@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 8a083f30dc7e2d848af0c6ee819982de
+timeCreated: 1512917031
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Strings
+    100004: Venetian_base
+    100006: Venetian_slats
+    100008: Venetian_stick
+    100010: Venetian_updown
+    100012: VenetianFrame_VenetianFrane
+    400000: //RootNode
+    400002: Strings
+    400004: Venetian_base
+    400006: Venetian_slats
+    400008: Venetian_stick
+    400010: Venetian_updown
+    400012: VenetianFrame_VenetianFrane
+    2300000: Strings
+    2300002: Venetian_base
+    2300004: Venetian_slats
+    2300006: Venetian_stick
+    2300008: Venetian_updown
+    2300010: VenetianFrame_VenetianFrane
+    3300000: Strings
+    3300002: Venetian_base
+    3300004: Venetian_slats
+    3300006: Venetian_stick
+    3300008: Venetian_updown
+    3300010: VenetianFrame_VenetianFrane
+    4300000: Strings
+    4300002: Venetian_base
+    4300004: Venetian_slats
+    4300006: Venetian_stick
+    4300008: Venetian_updown
+    4300010: VenetianFrame_VenetianFrane
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StringsMat
+    second: {fileID: 2100000, guid: bac6441ba2565c54d8a1e9a0b14f4446, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VenetianFrame_VenetianFraneMat
+    second: {fileID: 2100000, guid: 1da963e86bbbcfc4394ce6f4e8abdcf7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Venetian_baseMat
+    second: {fileID: 2100000, guid: 5d0216f6156831545ba794db2cc10011, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Venetian_slatsMat
+    second: {fileID: 2100000, guid: a9591495e4388a64c910e25a7f2ca124, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Venetian_stickMat
+    second: {fileID: 2100000, guid: 949c25a38e567694d9bc6bbc7a210343, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Venetian_updownMat
+    second: {fileID: 2100000, guid: 7eee970c6346ffb41828b2c8aa4e9949, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
