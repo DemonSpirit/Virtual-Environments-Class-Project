@@ -19,6 +19,9 @@ public class RoomManager : MonoBehaviour
     [SerializeField] Material childWallpaper;
     [SerializeField] Material adultWallpaper;
     [SerializeField] Material carehomeWallpaper;
+    [SerializeField] Material childCarpet;
+    [SerializeField] Material adultCarpet;
+    [SerializeField] Material carehomeCarpet;
 
     private Material currentWallpaper;
     private bool allWallPapersChanged = true;
@@ -27,8 +30,9 @@ public class RoomManager : MonoBehaviour
     [SerializeField] GameObject EWall;
     [SerializeField] GameObject SWall;
     [SerializeField] GameObject WWall;
+    [SerializeField] GameObject Floor;
 
-    WallpaperWall[] walls = new WallpaperWall[4];
+    WallpaperWall[] walls = new WallpaperWall[5];
 
     List<GameObject> objectsToDisappear;
 
