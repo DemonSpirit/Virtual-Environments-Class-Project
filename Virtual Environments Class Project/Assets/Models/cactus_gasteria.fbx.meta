@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 4eb76a644d2050b4c96391eb329461bf
+timeCreated: 1512889201
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: GA_cactus
+    100004: GA_clay_pot
+    100006: GA_ground_pot
+    100008: GA_stones
+    100010: GA_vase
+    100012: plantpot_cactus_gasteria
+    400000: //RootNode
+    400002: GA_cactus
+    400004: GA_clay_pot
+    400006: GA_ground_pot
+    400008: GA_stones
+    400010: GA_vase
+    400012: plantpot_cactus_gasteria
+    2300000: GA_cactus
+    2300002: GA_clay_pot
+    2300004: GA_ground_pot
+    2300006: GA_stones
+    2300008: GA_vase
+    3300000: GA_cactus
+    3300002: GA_clay_pot
+    3300004: GA_ground_pot
+    3300006: GA_stones
+    3300008: GA_vase
+    4300000: GA_stones
+    4300002: GA_vase
+    4300004: GA_cactus
+    4300006: GA_clay_pot
+    4300008: GA_ground_pot
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cactus_gasteria
+    second: {fileID: 2100000, guid: b32d6236c56eedf42bf974e29e825e83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: clay_pot
+    second: {fileID: 2100000, guid: e64d5d63a7ba8e3438ecba5ef4e35e96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground_pot5
+    second: {fileID: 2100000, guid: bc51e68c8b37d4240891ee8128eb5e2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stones
+    second: {fileID: 2100000, guid: 405103a7f114c774383105e58a67b878, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vase_gasteria
+    second: {fileID: 2100000, guid: a1794502489c80a4aa30014582340e4c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
