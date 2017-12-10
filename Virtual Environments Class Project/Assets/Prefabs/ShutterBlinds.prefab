@@ -53,6 +53,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4623106250364668}
+  - component: {fileID: 65106316256002770}
   m_Layer: 0
   m_Name: ShutterBlinds
   m_TagString: Untagged
@@ -186,8 +187,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1407212526383038}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.817, y: 0.491, z: -2.318}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4874115, y: 0.49099922, z: -2.289}
   m_LocalScale: {x: 1.0909041, y: 0.9361495, z: 1}
   m_Children:
   - {fileID: 4256810892906396}
@@ -471,3 +472,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1602519695077658}
   m_Mesh: {fileID: 4300004, guid: 8a083f30dc7e2d848af0c6ee819982de, type: 3}
+--- !u!65 &65106316256002770
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407212526383038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9360409, y: 2.1253152, z: 0.32744098}
+  m_Center: {x: -0.00019625912, y: 1.0497352, z: 0.100999}

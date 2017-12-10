@@ -70,6 +70,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4924457221362924}
+  - component: {fileID: 65090842652766596}
   m_Layer: 0
   m_Name: Blinds
   m_TagString: Untagged
@@ -109,8 +110,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1908826118443850}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.507, y: 0.497, z: -2.327}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.522, y: 0.49699974, z: -2.2599983}
   m_LocalScale: {x: 0.99212736, y: 0.9206182, z: 1}
   m_Children:
   - {fileID: 4271077639587318}
@@ -255,3 +256,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1577299880238512}
   m_Mesh: {fileID: 4300000, guid: cc5fff547ea8bf740991e7d88f2fe433, type: 3}
+--- !u!65 &65090842652766596
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1908826118443850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.2227452, y: 2.2431235, z: 0.3087542}
+  m_Center: {x: -0.021245908, y: 1.0763547, z: 0.02710259}
