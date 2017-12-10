@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: 6b81ffc8d2ce8a74daafef9ebaa32fb3
+timeCreated: 1512922236
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: DoorKnob_001
+    100004: DoorKnob_002
+    100006: DoorKnob_003
+    100008: DoorKnob_004
+    100010: DoorKnob_005
+    100012: DoorKnob_006
+    100014: DoorKnob_007
+    100016: DoorKnob_008
+    100018: DoorKnob_009
+    100020: DoorKnob_010
+    100022: DoorKnob_011
+    100024: DoorKnob_012
+    100026: DoorKnob_013
+    100028: DoorKnob_014
+    100030: DoorKnob_015
+    100032: DoorKnob_016
+    100034: DoorKnob_017
+    100036: DoorKnob_018
+    100038: DoorKnob_019
+    100040: DoorKnob_020
+    100042: DoorKnob_021
+    100044: DoorKnob_022
+    100046: DoorKnob_023
+    100048: DoorKnob_024
+    100050: DoorKnob_025
+    100052: Layer0_001
+    100054: Roof_001
+    100056: Second Floor_001
+    400000: //RootNode
+    400002: DoorKnob_001
+    400004: DoorKnob_002
+    400006: DoorKnob_003
+    400008: DoorKnob_004
+    400010: DoorKnob_005
+    400012: DoorKnob_006
+    400014: DoorKnob_007
+    400016: DoorKnob_008
+    400018: DoorKnob_009
+    400020: DoorKnob_010
+    400022: DoorKnob_011
+    400024: DoorKnob_012
+    400026: DoorKnob_013
+    400028: DoorKnob_014
+    400030: DoorKnob_015
+    400032: DoorKnob_016
+    400034: DoorKnob_017
+    400036: DoorKnob_018
+    400038: DoorKnob_019
+    400040: DoorKnob_020
+    400042: DoorKnob_021
+    400044: DoorKnob_022
+    400046: DoorKnob_023
+    400048: DoorKnob_024
+    400050: DoorKnob_025
+    400052: Layer0_001
+    400054: Roof_001
+    400056: Second Floor_001
+    2300000: DoorKnob_001
+    2300002: DoorKnob_002
+    2300004: DoorKnob_003
+    2300006: DoorKnob_004
+    2300008: DoorKnob_005
+    2300010: DoorKnob_006
+    2300012: DoorKnob_007
+    2300014: DoorKnob_008
+    2300016: DoorKnob_009
+    2300018: DoorKnob_010
+    2300020: DoorKnob_011
+    2300022: DoorKnob_012
+    2300024: DoorKnob_013
+    2300026: DoorKnob_014
+    2300028: DoorKnob_015
+    2300030: DoorKnob_016
+    2300032: DoorKnob_017
+    2300034: DoorKnob_018
+    2300036: DoorKnob_019
+    2300038: DoorKnob_020
+    2300040: DoorKnob_021
+    2300042: DoorKnob_022
+    2300044: DoorKnob_023
+    2300046: DoorKnob_024
+    2300048: DoorKnob_025
+    2300050: Layer0_001
+    2300052: Roof_001
+    2300054: Second Floor_001
+    3300000: DoorKnob_001
+    3300002: DoorKnob_002
+    3300004: DoorKnob_003
+    3300006: DoorKnob_004
+    3300008: DoorKnob_005
+    3300010: DoorKnob_006
+    3300012: DoorKnob_007
+    3300014: DoorKnob_008
+    3300016: DoorKnob_009
+    3300018: DoorKnob_010
+    3300020: DoorKnob_011
+    3300022: DoorKnob_012
+    3300024: DoorKnob_013
+    3300026: DoorKnob_014
+    3300028: DoorKnob_015
+    3300030: DoorKnob_016
+    3300032: DoorKnob_017
+    3300034: DoorKnob_018
+    3300036: DoorKnob_019
+    3300038: DoorKnob_020
+    3300040: DoorKnob_021
+    3300042: DoorKnob_022
+    3300044: DoorKnob_023
+    3300046: DoorKnob_024
+    3300048: DoorKnob_025
+    3300050: Layer0_001
+    3300052: Roof_001
+    3300054: Second Floor_001
+    4300000: DoorKnob_025
+    4300002: DoorKnob_024
+    4300004: DoorKnob_023
+    4300006: DoorKnob_022
+    4300008: DoorKnob_021
+    4300010: DoorKnob_020
+    4300012: DoorKnob_019
+    4300014: DoorKnob_018
+    4300016: DoorKnob_017
+    4300018: DoorKnob_016
+    4300020: DoorKnob_015
+    4300022: DoorKnob_014
+    4300024: DoorKnob_013
+    4300026: DoorKnob_012
+    4300028: DoorKnob_011
+    4300030: DoorKnob_010
+    4300032: DoorKnob_009
+    4300034: DoorKnob_008
+    4300036: DoorKnob_007
+    4300038: DoorKnob_006
+    4300040: DoorKnob_005
+    4300042: DoorKnob_004
+    4300044: DoorKnob_003
+    4300046: DoorKnob_002
+    4300048: DoorKnob_001
+    4300050: Roof_001
+    4300052: Second Floor_001
+    4300054: Layer0_001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: aa19b1de015f64bd38e3e4ee40683e12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_001
+    second: {fileID: 2100000, guid: c9d59ece72493bf44bd4e2a4d13a09b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_002
+    second: {fileID: 2100000, guid: 363886db9b6d5a84696c38e410c2ddcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_003
+    second: {fileID: 2100000, guid: 21233190b383001459ccbf2628942b71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_004
+    second: {fileID: 2100000, guid: 924a632f80439b142aca9b0ad9e6f426, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_005
+    second: {fileID: 2100000, guid: e5df61180b7c58842bed99593cb80ff6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_006
+    second: {fileID: 2100000, guid: 49243cbbc8279a34689767615217aa77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_007
+    second: {fileID: 2100000, guid: fdb4ca0a182b34747b9b339c96077e9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_008
+    second: {fileID: 2100000, guid: 4f3096aaaeb20744ba7a980cf2719c0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_009
+    second: {fileID: 2100000, guid: 3286d2861dad0fd43a19aee70096f25c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_010
+    second: {fileID: 2100000, guid: 06f00269d7be9254696713a25262f891, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_011
+    second: {fileID: 2100000, guid: 671ca221453504743b4b4ddadca81ef5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_012
+    second: {fileID: 2100000, guid: c01e88efcfdbab247adeeb9c472ecb59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_013
+    second: {fileID: 2100000, guid: 4e89df63a2ac2d24399e6d6f836c07a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_014
+    second: {fileID: 2100000, guid: af202f5e894ee4c4c882f2a02df1551c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_015
+    second: {fileID: 2100000, guid: 4807d95b1e27c5e40a1cb69f8ae5a50b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_016
+    second: {fileID: 2100000, guid: 9e70a3ab22a67ba42af4bef1c68a3df9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_017
+    second: {fileID: 2100000, guid: 5c0b8750a1c27dd49ab7ac4c0211053e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_018
+    second: {fileID: 2100000, guid: de340d9ce41b0a14cb0e7d725e82a433, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_019
+    second: {fileID: 2100000, guid: 5b4beb3e8cedc7241b59154dbedef14f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_020
+    second: {fileID: 2100000, guid: dcd44e1e13fa61c4f9845093409f7695, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_021
+    second: {fileID: 2100000, guid: 99647a4ebc90c064b8672acb51866cb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_022
+    second: {fileID: 2100000, guid: 3b7db33d7a816694ebcda9bd9e759ae8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_023
+    second: {fileID: 2100000, guid: 899b283c495e82047a6d00cd3e06ed5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_024
+    second: {fileID: 2100000, guid: 516a4fd874d0f6640a5d463476b79d99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_025
+    second: {fileID: 2100000, guid: a686903664ecc89499d016e3fac40b5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_026
+    second: {fileID: 2100000, guid: 129aa4244584e474ba4dfdbb9c29a099, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_027
+    second: {fileID: 2100000, guid: 14cc7a1bdfa1fcd43857d580fbc6c08c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_028
+    second: {fileID: 2100000, guid: e2770704609040145851eba1e5460330, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_029
+    second: {fileID: 2100000, guid: ad41224df53a15c4386f4153b463ad83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_030
+    second: {fileID: 2100000, guid: 4050dbf1bc18cc8439f1d73a630e6922, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_031
+    second: {fileID: 2100000, guid: a92ab6299772b404aa2a5f85a8d07495, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_032
+    second: {fileID: 2100000, guid: b3eb326dfa71115489997060ca3267d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_033
+    second: {fileID: 2100000, guid: 722bf593cdfde364c94e46662e334908, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_034
+    second: {fileID: 2100000, guid: 3c7b934e049533444b3d0d0c107d220c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_035
+    second: {fileID: 2100000, guid: f0370275b69db7d4db994d3e9cd4fd62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_036
+    second: {fileID: 2100000, guid: ebb7840d33a331a499fc59c88e0a8e4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_037
+    second: {fileID: 2100000, guid: 98433c6cb3a7b8f4ba4a604e1f4b08b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_038
+    second: {fileID: 2100000, guid: f9abd0e88d23ffe44a1314b3a6bcac2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Layer0_039
+    second: {fileID: 2100000, guid: b39f519d2f66a4141905d3c03e901477, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Roof_001
+    second: {fileID: 2100000, guid: af975ea2cace2764999f3c12f624d81d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Roof_002
+    second: {fileID: 2100000, guid: 17c9baeaf5d26e24785eacd4d0587338, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Second Floor_001
+    second: {fileID: 2100000, guid: cb16deaa41bf00d4aa8f8bbd35eac80a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Second Floor_002
+    second: {fileID: 2100000, guid: 012d35d4cba032e4d87260f7dc1b46b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Second Floor_003
+    second: {fileID: 2100000, guid: a5a6c05ee17326345ae4b3f7bf480a20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Second Floor_004
+    second: {fileID: 2100000, guid: d85740877ad9f444c8325f0772432fb0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Second Floor_005
+    second: {fileID: 2100000, guid: 29d9a58bf0121944cb1a32f951c00b65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Second Floor_006
+    second: {fileID: 2100000, guid: e818cadca4f460f41a9ba6f348665df0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Second Floor_007
+    second: {fileID: 2100000, guid: 643ac64acd8984e419dd1e7d4a3f10b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Second Floor_008
+    second: {fileID: 2100000, guid: be4ccabdebec4c94a91f9885369ea226, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Second Floor_009
+    second: {fileID: 2100000, guid: b31986e9ad66be9469209e61194cb886, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dbl_Second Floor_010
+    second: {fileID: 2100000, guid: 7edb7f4a8f2ca754bb3623a99a9a32be, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
