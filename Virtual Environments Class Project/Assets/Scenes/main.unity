@@ -8137,6 +8137,11 @@ Prefab:
       propertyPath: m_Name
       value: Floor1
       objectReference: {fileID: 0}
+    - target: {fileID: 23055755044956796, guid: 5eda00d4d4ecedb4d9254cb0df321e31,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6bc0641201bb78d4b8480b49cfb454d5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5eda00d4d4ecedb4d9254cb0df321e31, type: 2}
   m_IsPrefabParent: 0
@@ -10959,6 +10964,11 @@ Prefab:
       propertyPath: m_Name
       value: Floor3
       objectReference: {fileID: 0}
+    - target: {fileID: 23055755044956796, guid: 5eda00d4d4ecedb4d9254cb0df321e31,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e9e92e73a9e8b684aac4db7683dd5cb2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5eda00d4d4ecedb4d9254cb0df321e31, type: 2}
   m_IsPrefabParent: 0
@@ -31846,6 +31856,11 @@ Prefab:
       propertyPath: m_Name
       value: Floor2
       objectReference: {fileID: 0}
+    - target: {fileID: 23055755044956796, guid: 5eda00d4d4ecedb4d9254cb0df321e31,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8f1a96a2e73f1e34082b23ac499e785d, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5eda00d4d4ecedb4d9254cb0df321e31, type: 2}
   m_IsPrefabParent: 0
