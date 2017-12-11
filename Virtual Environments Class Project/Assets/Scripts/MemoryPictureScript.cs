@@ -22,25 +22,37 @@ public class MemoryPictureScript : MonoBehaviour
 
     // Trigger Values
     private float currTriggerTime = 0.0f; // Length of time that the object has currently been directly looked at uninterrupeted.
-    [SerializeField] float totalTriggerTime = 3.0f; // Total number of seconds that an object must be look at to trigger the change.
+    [SerializeField] float totalTriggerTime = 1.5f; // Total number of seconds that an object must be look at to trigger the change.
 
     // Selection booleans
     private bool selecting = false;
     private bool selected = false;
 
+    private bool shown = false;
+
+    [SerializeField] Light spotlight;
+
     // Use this for initialization
     void Start()
     {
         mainCamera = RoomManager.playerCam;
+        GetComponent<Renderer>().enabled = false;
+        transform.Find("Picture").GetComponent<Renderer>().enabled = false;
+        GetComponent<Collider>().isTrigger = true;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         bool shouldPictureAppear = (GameManager.singleton.currentRoom != roomID && GameManager.singleton.hasRoomBeenVisisted(roomID));
-        GetComponent<Renderer>().enabled = shouldPictureAppear;
-        transform.Find("Picture").GetComponent<Renderer>().enabled = shouldPictureAppear;
-        GetComponent<Collider>().isTrigger = !shouldPictureAppear;
+
+        if (!CanSeeObjectV2(gameObject) && shouldPictureAppear != shown)
+        {
+            GetComponent<Renderer>().enabled = shouldPictureAppear;
+            transform.Find("Picture").GetComponent<Renderer>().enabled = shouldPictureAppear;
+            GetComponent<Collider>().isTrigger = !shouldPictureAppear;
+            shown = shouldPictureAppear;
+        }
 
         if (!shouldPictureAppear) return;
         // Get the 2D position of the object on the screen.
@@ -65,13 +77,14 @@ public class MemoryPictureScript : MonoBehaviour
                     // TODO: Check that this captures both controllers
                     SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost)).TriggerHapticPulse(1000);
                     SteamVR_Controller.Input(SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost)).TriggerHapticPulse(1000);
-                    LightManager.singleton.GetComponent<LightManager>().setIntensity(1.0f, 1.0f);
+                    LightManager.singleton.GetComponent<LightManager>().setIntensity(0.0f, 1.0f);
+                    selecting = true;
                 }
                 // If the object has been directly looked at for 3 seconds, trigger the timeline change.
                 if (currTriggerTime > totalTriggerTime && !selected)
                 {
                     GameManager.singleton.GetComponent<GameManager>().memoryGoToRoom(roomID);
-                    LightManager.singleton.GetComponent<LightManager>().setIntensity(0.0f, 1.0f);
+                    LightManager.singleton.GetComponent<LightManager>().setIntensity(1.0f, 1.0f);
                     //spotlight.intensity = 0.0f;
 
                     selected = true;
