@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour {
     public GameObject soundManager;
     public GameObject introOutroSphere;
 
+    public bool puzzleComplete = false;
+
     // Singleton
     [HideInInspector] public static GameManager singleton;
 
@@ -36,6 +38,13 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
+    }
+
+    public void playOutro()
+    {
+        if (puzzleComplete) return;
+        introOutroSphere.GetComponent<IntroOutroScript>().playOutro();
+        puzzleComplete = true;
     }
 
     public void trumpetPieceGoToRoom(int roomID)

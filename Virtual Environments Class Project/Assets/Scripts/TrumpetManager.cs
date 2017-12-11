@@ -22,6 +22,8 @@ public class TrumpetManager : MonoBehaviour {
 	{
 		if (singleton == null)
 			singleton = this;
+
+
 	}
 		
 	public void InstantiateCombinedObject(GameObject obj1, GameObject obj2)
@@ -133,6 +135,7 @@ public class TrumpetManager : MonoBehaviour {
     public void playCompleteTrumpet(AudioSource audios)
     {
         if (!audios.isPlaying) audios.Play();
+        GameManager.singleton.playOutro();
     }
 
     public void playTrumpetSound(AudioClip clip, AudioSource source)

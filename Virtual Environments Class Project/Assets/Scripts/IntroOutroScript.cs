@@ -10,6 +10,7 @@ public class IntroOutroScript : MonoBehaviour
     public AudioClip childClip;
     public AudioClip adultClip;
     public AudioClip oldClip;
+    public AudioClip applauseClip;
 
     bool childClipPlayed = false;
     bool adultClipPlayed = false;
@@ -111,14 +112,12 @@ public class IntroOutroScript : MonoBehaviour
         {
             playModeTimer += Time.deltaTime;
 
-            if (playModeTimer > 10.0)
+            float dissolveVal = 1.0f / 5.0f * playModeTimer;
+            GetComponent<Renderer>().material.SetFloat("_DisVal", dissolveVal);
+            if (playModeTimer > 5.0f)
             {
-                float dissolveVal = 1.0f - (1.0f / 5.0f * (playModeTimer - 10.0f));
-                GetComponent<Renderer>().material.SetFloat("_DisVal", dissolveVal);
-                if (playModeTimer > 5.0f)
-                {
-                    playModePlaying = false;
-                }
+                playModePlaying = false;
+                GetComponent<MeshRenderer>().enabled = false;
             }
         }
     }
@@ -133,11 +132,12 @@ public class IntroOutroScript : MonoBehaviour
 
     public void playOutro()
     {
-        playOldSound();
         GetComponent<MeshRenderer>().enabled = true;
         GetComponent<Renderer>().material.SetTexture("_MainTex", outroTexture);
         outroTimer = 0.0f;
         outroPlaying = true;
+        GetComponent<AudioSource>().clip = applauseClip;
+        GetComponent<AudioSource>().PlayDelayed(2.0f);
     }
 
     public void goToPlaymode()
