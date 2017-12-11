@@ -18,9 +18,11 @@ public class IntroOutroScript : MonoBehaviour
     bool introStarted = false;
     bool introPlaying = false;
     bool outroPlaying = false;
+    bool playModePlaying = false;
     bool experienceFinished = false;
     float introTimer = 0.0f;
     float outroTimer = 0.0f;
+    float playModeTimer = 0.0f;
     bool leftTrigger = false;
     bool leftPrevTrigger = false;
     bool rightTrigger = false;
@@ -104,6 +106,21 @@ public class IntroOutroScript : MonoBehaviour
             leftPrevTrigger = leftTrigger;
             rightPrevTrigger = rightTrigger;
         }
+
+        if (playModePlaying)
+        {
+            playModeTimer += Time.deltaTime;
+
+            if (playModeTimer > 10.0)
+            {
+                float dissolveVal = 1.0f - (1.0f / 5.0f * (playModeTimer - 10.0f));
+                GetComponent<Renderer>().material.SetFloat("_DisVal", dissolveVal);
+                if (playModeTimer > 5.0f)
+                {
+                    playModePlaying = false;
+                }
+            }
+        }
     }
 
     void playIntro()
@@ -125,9 +142,9 @@ public class IntroOutroScript : MonoBehaviour
 
     public void goToPlaymode()
     {
-        introStarted = true;
-        introPlaying = true;
-        introTimer = 0.0f;
+        experienceFinished = false;
+        playModePlaying = true;
+        playModeTimer = 0.0f;
     }
 
     public void playChildSound()

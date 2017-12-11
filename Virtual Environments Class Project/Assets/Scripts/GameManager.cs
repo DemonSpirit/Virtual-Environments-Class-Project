@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour {
     public GameObject roomManager;
     public GameObject lightManager;
     public GameObject soundManager;
+    public GameObject introOutroSphere;
+
+    // Singleton
+    [HideInInspector] public static GameManager singleton;
 
     void Awake()
 	{
@@ -25,7 +29,8 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        
+        if (singleton == null)
+            singleton = this;
     }
 
 	// Update is called once per frame

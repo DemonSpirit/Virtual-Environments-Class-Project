@@ -9,6 +9,8 @@ TagManager:
   - Unremovable
   - Ignore
   - TrumpetTrigger
+  - GoldenVinyl
+  - Mouth
   layers:
   - Default
   - TransparentFX

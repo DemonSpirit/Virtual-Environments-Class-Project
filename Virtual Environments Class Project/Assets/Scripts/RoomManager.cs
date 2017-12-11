@@ -155,6 +155,7 @@ public class RoomManager : MonoBehaviour
     public void moveToRoom(int roomID)
     {
         currentWallpaper = getCurrentWallpaper(roomID);
+        LightManager.singleton.setIntensity(((roomID == 1) ? 0.6f : 1.0f), 3.0f);
         ChangeRoomState(roomID);
         shouldEmptyRoom = true;
         allWallPapersChanged = false;

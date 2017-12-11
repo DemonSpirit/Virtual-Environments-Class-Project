@@ -3,20 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TrumpetPiece : MonoBehaviour {
-	/*AudioSource audioSource;
-	[SerializeField] AudioClip audioClip;*/
 	[SerializeField] public int id;
+    public bool hasBeenPickedUp = false;
 
 	// Use this for initialization
 	void Start () {
-        /*if (audioSource == null)
-			audioSource = gameObject.AddComponent<AudioSource>() as AudioSource;
-		else audioSource = GetComponent<AudioSource>();*/
+
 	}
 
     void FixedUpdate()
     {
         
+    }
+
+    public void trumpetPickedUp()
+    {
+        if (hasBeenPickedUp) return;
+        AudioSource audios = GetComponent<AudioSource>();
+        if (audios.clip != null) audios.Play();
+        hasBeenPickedUp = true;
     }
 
 	void OnCollisionEnter(Collision col)

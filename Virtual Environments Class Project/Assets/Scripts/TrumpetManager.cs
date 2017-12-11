@@ -7,10 +7,12 @@ public class TrumpetManager : MonoBehaviour {
     [SerializeField] GameObject lHand;
     [SerializeField] GameObject rHand;
 
-	[SerializeField] GameObject combTrump1x2;
+    [SerializeField] GameObject combTrump1x2;
 	[SerializeField] GameObject combTrump1x3;
 	[SerializeField] GameObject combTrump2x3;
 	[SerializeField] GameObject combTrumpComplete;
+
+    AudioSource trumpetAudioSource;
 
 	// Singleton
 	[HideInInspector] public static TrumpetManager singleton;
@@ -38,6 +40,7 @@ public class TrumpetManager : MonoBehaviour {
         if ( (obj1ID == 1 && obj2ID == 2) || (obj1ID == 2 && obj2ID == 1) )
 		{
             newObject = combTrump1x2;
+            GameManager.singleton.trumpetPieceGoToRoom(2);
 		}
 
 		// 1x3
@@ -57,7 +60,7 @@ public class TrumpetManager : MonoBehaviour {
 		{
             newObject = combTrumpComplete;
         }
-
+        if (newObject != null) newObject.GetComponent<TrumpetPiece>().hasBeenPickedUp = true;
         if (obj1Held && obj2Held)
         {
             GameObject objInLeftHand = (obj1.transform.parent == lHand.transform) ? obj1 : obj2;
@@ -125,6 +128,27 @@ public class TrumpetManager : MonoBehaviour {
         if (obj.transform.parent == lHand.transform) hand = lHand;
         if (obj.transform.parent == rHand.transform) hand = rHand;
         return hand;
+    }
+
+    public void playCompleteTrumpet(AudioSource audios)
+    {
+        if (!audios.isPlaying) audios.Play();
+    }
+
+    public void playTrumpetSound(AudioClip clip, AudioSource source)
+    {
+        stopTrumpetSound();
+        trumpetAudioSource = source;
+        trumpetAudioSource.PlayOneShot(clip);
+    }
+
+    public void stopTrumpetSound()
+    {
+        if (trumpetAudioSource != null)
+        {
+            if (trumpetAudioSource.isPlaying) trumpetAudioSource.Stop();
+            trumpetAudioSource = null;
+        }
     }
 
 }

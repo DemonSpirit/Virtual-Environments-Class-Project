@@ -40,7 +40,7 @@ public class ObjectGazeTrigger : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        if (gameManager.GetComponent<GameManager>().currentRoom == roomID) return;
+        if (GameManager.singleton.currentRoom == roomID) return;
         // Get the 2D position of the object on the screen.
         Vector3 screenPos = mainCamera.WorldToScreenPoint(transform.position);
         // Get the distance of the object from the center of the screen. 
@@ -50,7 +50,7 @@ public class ObjectGazeTrigger : MonoBehaviour {
 
         // If the distance is less than the deadspot (close enough to directly looking at the object)
 
-        if (CanSeeObjectV2(gameObject) && distz < 2.0f && gameManager.GetComponent<GameManager>().hasRoomBeenVisisted(roomID))
+        if (CanSeeObjectV2(gameObject) && distz < 2.0f && GameManager.singleton.hasRoomBeenVisisted(roomID))
         {
             if (dist < selectionDeadSpot)
             {

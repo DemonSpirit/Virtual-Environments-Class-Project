@@ -19,6 +19,10 @@ public class RecordPlayer : MonoBehaviour {
     public GameObject lHand;
     public GameObject rHand;
     GameObject currVinyl;
+    public GameObject trumpetPiece;
+
+    float trumpetCreateTimer = 0.0f;
+    bool trumpetPieceCreated = false;
 
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
@@ -88,7 +92,27 @@ void Update()
     {
             if (recordPlayerActive == true)
             {
-                if (!GetComponent<AudioSource>().isPlaying && currVinyl != null) GetComponent<AudioSource>().PlayOneShot(currVinyl.GetComponent<VinylRecordScript>().song);
+                if (!GetComponent<AudioSource>().isPlaying && currVinyl != null)
+                {
+                    GetComponent<AudioSource>().PlayOneShot(currVinyl.GetComponent<VinylRecordScript>().song);
+                    trumpetCreateTimer = 0.0f;
+                } else if (GetComponent<AudioSource>().isPlaying && currVinyl != null)
+                {
+                    if (currVinyl.tag == "GoldenVinyl" && !trumpetPieceCreated)
+                    {
+                        if (trumpetCreateTimer < 9.0f)
+                        {
+                            trumpetCreateTimer += Time.deltaTime;
+                        } else
+                        {
+                            trumpetPieceCreated = true;
+                            Instantiate(trumpetPiece, new Vector3(transform.position.x, 2.5f, transform.position.z), Quaternion.identity, transform.parent);
+                            GetComponent<AudioSource>().Stop();
+                            recordPlayerActive = false;
+                        }
+                        
+                    }
+                }
                 discAngle += Time.deltaTime * discSpeed;
             }
             else
@@ -142,6 +166,7 @@ void Update()
         currVinyl.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         currVinyl.GetComponent<Collider>().enabled = true;
         currVinyl.transform.SetParent(gameObject.transform.parent);
+        if (GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().Stop();
         if (hand != null)
         {
             hand.GetComponent<Valve.VR.InteractionSystem.Hand>().AttachObject(currVinyl);
