@@ -89,11 +89,11 @@ public class StressBall : EditorWindow
 		if (e.isMouse) {
 		
 			//check for drag:
-			if(e.type == EventType.mouseDown && ballPosition.Contains(e.mousePosition)){
+			if(e.type == EventType.MouseDown && ballPosition.Contains(e.mousePosition)){
 				dragging = true;
 				ballVisual = heldBall;
 			}
-			if(e.type == EventType.mouseUp && dragging || e.mousePosition.x < 0 || e.mousePosition.x > bounds.width || e.mousePosition.y < 0 || e.mousePosition.y > bounds.height){
+			if(e.type == EventType.MouseUp && dragging || e.mousePosition.x < 0 || e.mousePosition.x > bounds.width || e.mousePosition.y < 0 || e.mousePosition.y > bounds.height){
 				dragging = false;
 				ballVisual = ball;
 			}

@@ -97,11 +97,11 @@ public class IntroOutroScript : MonoBehaviour
 
             if (leftTrigger && leftTrigger != leftPrevTrigger)
             {
-                goToPlaymode();
+                GameManager.singleton.restartExperience();
             }
             else if (rightTrigger && rightTrigger != rightPrevTrigger)
             {
-                goToPlaymode();
+                GameManager.singleton.restartExperience();
             }
 
             leftPrevTrigger = leftTrigger;
